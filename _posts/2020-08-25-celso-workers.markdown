@@ -14,7 +14,7 @@ This is the workflow I had in mind:
 - I can test things locally before going live.
 - When done, I git add the new post to my repo, then push it to Github.
 - Website gets burned to static files.
-- Website is published to the cloud, at Cloudflare.
+- Website is published to the cloud at Cloudflare.
 - I get a success/failure notification in my Telegram.
 - Done, it's live.
 
@@ -26,10 +26,15 @@ This is how I did it, tech-wise, step by step:
 
 ## Installation
 
-First, you need to install [wrangler][2],  a CLI tool to operate the Cloudflare Workers, [Jekyll][3], and its dependencies, using bundler.
+First, you can clone this repo.
 
 ```
 git clone git@github.com:celso/celso.io.git
+```
+
+Then instal install [wrangler][2],  a CLI tool to operate the Cloudflare Workers, [Jekyll][3], and its dependencies, using bundler.
+
+```
 cd celso.io
 npm i @cloudflare/wrangler -g
 sudo gem install bundler
@@ -38,7 +43,7 @@ bundle install
 
 ## Cloudflare Tokens
 
-Then you need a Cloudflare account (free) and a Cloudflare Workers Bundled subscription, which will give you access to the [Workers KV][5] (which is where your blog will be stored at the edge). Bundled is notably cheap and will provide you with access to the lowest latency in the network. Also, you get increased CPU time limits which enables other interesting applications you can do in the future.
+Then you need a Cloudflare account (free) and a Cloudflare Workers Bundled subscription, which will give you access to the [Workers KV][5] (which is where your blog will be stored at the edge). Bundled is notably cheap and will provide you with access to the lowest latency in the network. Also, you get increased CPU time limits, which enable other interesting applications you can do in the future.
 
 You also need to add your website or blog domain to Cloudflare, which is free. [Here's how][6].
 
@@ -65,15 +70,15 @@ To get an API token, go to your profile page (top right corner), and click the "
 
 ![Screenshot](/assets/workers2.png?raw=true)
 
-Now click the "Create Token" button, then use the "Edit Cloudflare Workers" template. In the next screen you can restrict the token to a specific account and zone. Choose the account and zone that correspond to your website domain. Click "Continue to summary". Click "Create Token".
+Now click the "Create Token" button, then use the "Edit Cloudflare Workers" template. In the next screen, you can restrict the token to a specific account and zone. Choose the account and zone that correspond to your website domain. Click "Continue to summary." Click "Create Token."
 
 ![Screenshot](/assets/workers3.png?raw=true)
 
-Copy the token, you're going to need it.
+Copy the token; you're going to need it.
 
 ## Wrangler
 
-Wrangler is a CLI tool from Cloudflare that you can use to build, preview and publish your Worker code. You can check Wrangler's documention [here][7].
+Wrangler is a CLI tool from Cloudflare that you can use to build, preview and publish your Worker code. You can check Wrangler's documentation [here][7].
 
 In a new project, you'd use something like this to initialize a wrangler template for a Worker site.
 
@@ -81,7 +86,7 @@ In a new project, you'd use something like this to initialize a wrangler templat
 wrangler init celso-io --site
 ```
 
-This will both create a [wrangler.toml][8] file and a [workers-site][9] subdirectory with the source code that will handle your website's requests. You can go throught [this source][10] if you want to understand how the engine interacts with the [Workers KV][11] database (where your blog static files will be stored) and serves each HTTP request.
+This will both create a [wrangler.toml][8] file and a [workers-site][9] subdirectory with the source code that will handle your website's requests. You can go through [this source][10] if you want to understand how the engine interacts with the [Workers KV][11] database (where your blog static files will be stored) and serves each HTTP request.
 
 My repo was previously initialized, you can check my [wrangler.toml][8] file:
 
@@ -105,15 +110,15 @@ bucket = "./_site"
 entry-point = "workers-site"
 ```
 
-You can find more information about the configuration options [here][12]. As you can see I make use of the [environments][13] feature. I also don't have any IDs or keys in the configuration. Those will be passed throught shell environment variables both with local development, staging and production. More on this later.
+You can find more information about the configuration options [here][12]. As you can see, I make use of the [environments][13] feature. I also don't have any IDs or keys in the configuration. These will be passed through shell environment variables both with local development, staging and production. More on this later.
 
 ## Routes
 
-In order to run your worker code with each request on your domain, you need to configure a worker route in your Cloudflare Dashboard. Go to your account and click the "Workers" button in the top navigation bar, then click "Add route". Here's mine.
+To run your worker code with each request on your domain, you need to configure a worker route in your Cloudflare Dashboard. Go to your account, click the "Workers" button in the top navigation bar, and then click "Add route." Here's mine:
 
 ![Screenshot](/assets/workers4.png?raw=true)
 
-You can only configure your route after you publish your worker using wrangler, otherwise it won't show up in the dashboard. If you look at my [wrangler.toml][8], you'll the same route regexp. In my dashboard screenshot, you can also see that the configured route corresponds to the [[worker.name]][[-worker.env]] nomenclature.
+You can only configure your route after you publish your worker using wrangler; otherwise, it won't show up in the dashboard. If you look at my [wrangler.toml][8], you'll find the same route regexp. In my dashboard screenshot, you can also see that the configured route corresponds to the [[worker.name]][[-worker.env]] nomenclature.
 
 Read [this document][14] to know more about Routes.
 
@@ -125,7 +130,7 @@ Get your previously configured Cloudflare tokens ready.
 
 ### Local testing and staging
 
-For this we're going to use a dotenv file. Create a .env file in root of your project, like this:
+For this, we're going to use a dotenv file. Create a .env file in the root of your project, like this:
 
 **cat .env**
 
@@ -144,7 +149,7 @@ That's it.
 
 Introducing **Github Actions**, Github's CI/CD feature.
 
-[GitHub Actions][16] allow you to automate your software deployment workflow. It's powerfull, simple to use, and guess what, it has an incredibly generous **[free tier][17]** that anyone can use (2,000 free computing minutes per month).
+[GitHub Actions][16] allow you to automate your software deployment workflow. It's powerful, simple to use, and guess what, it has an incredibly generous **[free tier][17]** that anyone can use (2,000 free computing minutes per month).
 
 A Github action is basically a workflow consisting of a list of tasks running in sequence. The workflows use what Github calls runners, which are Linux containers running your software on their VMs cloud. You can trigger a workflow on any Github event (ex: a git push to your repo).
 
@@ -199,9 +204,19 @@ jobs:
 ```
 {% endraw %}
 
-Before we proceed, you need to go to your repo settings in Github and click the "Secrets" tab in the left sidebar. You then need to add your secrects for CF_ACCOUNT_ID, CF_API_TOKEN, CF_EMAIL, CF_ZONE_ID.
+Before we proceed, you need to go to your repo settings in Github and click the "Secrets" tab in the left sidebar. You then need to add your secrets for:
 
-You can optionally add TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID. More on this later.
+- CF_ACCOUNT_ID
+- CF_API_TOKEN
+- CF_EMAIL
+- CF_ZONE_ID.
+
+You can optionally add:
+
+- TELEGRAM_BOT_TOKEN-
+- TELEGRAM_CHAT_ID
+
+More on this later.
 
 This tells Github to store your tokens and keys securey, in their password manager. You can then use these in your workflows, as environment variables.
 
@@ -213,7 +228,7 @@ My final workflow step is to send me a Telegram message with the result of my bl
 
 To get the TELEGRAM_BOT_TOKEN, you need to create your own bot first. [Here's how to do it][19].
 
-Now create a Telegram group and add your newly create bot to it. Then [do this][20] to discover your TELEGRAM_CHAT_ID.
+Now create a Telegram group and add your newly created bot to it. Then [do this][20] to discover your TELEGRAM_CHAT_ID.
 
 ### Workflow step by step
 
@@ -255,7 +270,7 @@ I'm running a ubuntu container with five steps.
           bundle exec jekyll build
 ```
 
-There are a few jekyll actions in the [marketplace][23], but none worked well for me, so I'm doing this manually, issuing the necessary shell commands in sequence. I install bundler, install jekyll and its [dependencies][24], and then burn my blog with *jekyll build*. I won't go into Jekyll in this post, click [here][3] to find its documentation if you need help.
+There are a few Jekyll actions in the [marketplace][23], but none worked well for me, so I'm doing this manually, issuing the necessary shell commands in sequence. I install bundler, install Jekyll and its [dependencies][24], and then burn my blog with *jekyll build*. I won't go into Jekyll in this post, click [here][3] to find its documentation if you need help.
 
 **Step 4: cloudflare/wrangler-action**
 
@@ -297,9 +312,9 @@ When this step is finished, your new website should be available.
 
 ### Local and staging tests
 
-You can use npm to test everything locally, or upload your Worker to the staging environment at Cloudflare, using npm. See my [package.json][27] for options.
+You can use npm to test everything locally or upload your Worker to Cloudflare's staging environment, using npm. See my [package.json][27] for options.
 
-You need [dotenv][29]
+You need [dotenv][29].
 
 ```
 npm install dotenv -g
@@ -321,11 +336,11 @@ This is what you should see if your Github action workflow works as expected.
 
 ## Final notes
 
-This was fun to put together. It took me about an hour to tweak everything and get this automated workflow running. It's the tip of the iceberg thought, Cloudflare Workers have a lot potential for other applications and I will be exploring them in the future.
+This was fun to put together. It took me about an hour to tweak everything and get this automated workflow running. It's the tip of the iceberg though, Cloudflare Workers have a lot of potential for other applications and I will be exploring them in the future.
 
-I also wanted this blog repo to go public, so that anyone could look around, [so here it is][30].
+I also wanted this blog repo to go public so that anyone could look around, [so here it is][30].
 
-Hope you find this tutorial useful. If you have questions, drop them in the issues, maybe I can help.
+I hope you find this tutorial useful. If you have questions, drop them in the issues, maybe I can help.
 
 [1]: https://workers.cloudflare.com/
 [2]: https://github.com/cloudflare/wrangler
