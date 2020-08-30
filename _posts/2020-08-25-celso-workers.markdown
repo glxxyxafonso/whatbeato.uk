@@ -26,7 +26,7 @@ This is how I did it, tech-wise, step by step:
 
 ## Installation
 
-First, you can clone this repo.
+First, you can clone this [repo][30].
 
 ```
 git clone git@github.com:celso/celso.io.git
