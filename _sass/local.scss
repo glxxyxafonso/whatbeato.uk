@@ -1,0 +1,54 @@
+.video-container {
+    position: relative;
+    margin-bottom: 15px !important;
+    padding-bottom: 60%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container video,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99.5%;
+    height: 99.5%;
+}
+
+.map-container {
+    position: relative;
+    margin-bottom: 15px !important;
+    padding-bottom: 60%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.map-container iframe,
+.map-container video,
+.map-container object,
+.map-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99.5%;
+    height: 99.5%;
+}
+
+/* fixes a problem with InK and Leaflet */
+#map img {
+    max-height: none !important;
+    -webkit-box-shadow: 0px 0px 0px !important;
+    box-shadow: 0px 0px 0px !important;
+}
+
+#map img + img {
+    margin-top: 0;
+}
+
+#map {
+    margin-bottom: 10px;
+}

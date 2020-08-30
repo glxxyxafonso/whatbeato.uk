@@ -1,0 +1,44 @@
+name: Deploy blog to cloudflare
+on:
+    push:
+        branches:
+            - master
+
+jobs:
+    build:
+        name: Building
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Use Github Actions cache
+              uses: actions/cache@v1
+              with:
+                  path: vendor/bundle
+                  key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+                  restore-keys: |
+                      ${{ runner.os }}-gems-
+            - name: Burn jekyll website
+              run: |
+                  sudo gem install bundler
+                  bundle config path vendor/bundle
+                  bundle install
+                  bundle exec jekyll build
+            - name: Publish to Cloudflare
+              uses: cloudflare/wrangler-action@1.3.0
+              with:
+                  apiToken: ${{ secrets.CF_API_TOKEN }}
+                  preCommands: |
+                    echo "debug: -$INPUT_ENVIRONMENT- -$INPUT_PUBLISH- -$CF_ACCOUNT_ID- -$CF_ZONE_ID-"
+                  environment: 'production'
+              env:
+                  CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+                  CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
+                  CF_EMAIL: ${{ secrets.CF_EMAIL }}
+            - name: Telegram notification
+              if: cancelled() == false
+              uses: xinthink/action-telegram@v1.1
+              with:
+                  botToken: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+                  chatId: ${{ secrets.TELEGRAM_CHAT_ID }}
+                  jobStatus: ${{ job.status }}
+                  skipSuccess: false

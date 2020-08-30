@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "Apple TV"
+date: 2007-04-8 00:04:00
+excerpt: "So don’t ask how (or why) but I got my hands on the Apple TV for a week now. Much has been said about this cute living room apple fruit, but maybe the hacker’s perspective hasn’t gone into much analysis yet. Hacking was the trigger for me. I wasn’t convinced by the iLife sync stuff nor the HDMI output, but the enormous list of hacks during the first week, while I was in San Diego, clicked on me. It was just too hackable not to have it, or, in the words of the Maker’s owner manifesto: “If you can’t open it, you don’t own it”."
+oldurl: "http://arrifana.org/blog/2007/04/apple-tv/"
+disqusid: "195 http://arrifana.org/blog/?p=195"
+categories: english tech-stuff
+---
+
+So don’t ask how (or why) but I got my hands on the [Apple TV][1] for a week now. Much has been said about this cute living room apple fruit, but maybe the hacker’s perspective hasn’t gone into much analysis yet. **Hacking** was the trigger for me. I wasn’t convinced by the iLife sync stuff nor the HDMI output, but the enormous list of hacks during the first week, while I was in San Diego, clicked on me. It was just too hackable not to have it, or, in the words of the [Maker’s owner manifesto][2]: “If you can’t open it, you don’t own it”.
+
+This USD $300 set top box is way beyond what it’s supposed to do, and Apple doesn’t seem to care (and I would applaud it if by any miracle they’re ignoring the phenomena on purpose, strategically). So as an hacker, here’s what I really like about this toy:
+
+ * It’s small, it’s very quiet. My wife likes it on the living room.
+ * It has [802.11n][3].
+ * I can use it as [file server][4], a web server, a [sshd remote server][5], and a [bit torrent client][6].
+ * It runs on Intel with a stripped down version of OSX. Most software I’m able to compile on my MacBook Pro, runs just fine on the Apple TV. As a Unix junkie I am pleased to confirm that most (if not all) [Darwin Ports][7] and [Fink][8] apps definitively run.
+ * I can upgrade it’s internal drive, If I really want. 40GB may be short.
+ * I can play HD divxs (well [720p][9] at least) and MPEG-2 files. Or anything supported by [Perian][10].
+ * I was able to copy a working full-fledged PHP5 binary, so all my controversial scripting apps work there as expected. Python and Perl are known to work fine too.
+ * I could [run Linux][11] on it if I wanted (which I don’t, not yet).
+ * I’m eagerly awaiting for the kernel and drivers that will unlock the service USB port. It may be needed to use the box with external drives and hmm, a Webcam and iChat ?
+
+Oh yeah, and it’s nice too that it syncs with my iPhoto and iTunes. Those family photos do really look stunning on my 40″ Sony Bravia. And yes, I’ve executed most the hacks described here, just in case you’re wondering. And yes, the US version works just fine in Europe – they even used a standard [C7 power-cord connector][12], so It’s plug and play hack.
+
+[1]: http://www.apple.com/appletv/
+[2]: http://www.makezine.com/blog/archive/2006/11/owners_manifest.html
+[3]: http://www.apple.com/wireless/80211/
+[4]: http://wiki.awkwardtv.org/wiki/Enable_AFP_Server
+[5]: http://www.appletvhacks.net/2007/03/24/enable-ssh-and-afp-on-your-apple-tv/
+[6]: http://i.am.politicallydisturbed.com/drupal/node/31
+[7]: http://www.macports.org/
+[8]: http://finkproject.org/
+[9]: http://en.wikipedia.org/wiki/720p
+[10]: http://perian.org/
+[11]: http://www.mactel-linux.org/wiki/AppleTV
+[12]: http://en.wikipedia.org/wiki/IEC_connector

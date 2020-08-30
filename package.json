@@ -1,0 +1,31 @@
+{
+  "name": "celso.io",
+  "version": "1.0.0",
+  "description": "my blog package.json helper",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm i @cloudflare/wrangler -g; npm install -g dotenv-cli; sudo gem install bundler; bundle install",
+    "jekyll": "bundle exec jekyll build --watch --trace",
+    "jekyll-serve": "bundle exec jekyll serve --watch --trace",
+    "jekyll-build": "bundle exec jekyll build",
+    "dev": "bundle exec jekyll build --watch --trace & dotenv -e .env -- wrangler dev --env=production",
+    "staging": "npm run jekyll-build; dotenv -e .env -- wrangler publish --env=staging",
+    "publish": "npm run jekyll-build; dotenv -e .env -- wrangler publish --env=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/celso/celso.io.git"
+  },
+  "keywords": [
+    "npm",
+    "workers",
+    "helper"
+  ],
+  "author": "Celso Martinho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/celso/celso.io/issues"
+  },
+  "homepage": "https://github.com/celso/celso.io#readme",
+  "devDependencies": {}
+}

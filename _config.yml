@@ -1,0 +1,26 @@
+title: Celso Martinho
+author: Celso Martinho
+email: hello at celso dot io
+url: https://celso.io/
+description: > # this means to ignore newlines until "show_excerpts:"
+  Paranoid Android
+favicon: "./favicon.ico"
+exclude: [ "_scripts", "workers-site", "README.md", "wrangler.toml", "moving.gemspec", "Gemfile", "Gemfile.lock", "package.json" ]
+show_excerpts: false # set to true to show excerpts on the homepage
+  
+moving:
+  avatar_url: "https://celso.io/assets/celso.png" # avatar in about page
+  about_you: From when Mosaic took over Gopher. # short description about you in about page
+  date_format: "%b %d" # date format of posts in home page
+  back_to: "Home" # In the post page, you have a back button above the title, you can custom the text by yourself.
+
+  social_links:
+    github:  celso
+    rss: RSS
+    linkedin: yizheng-huang
+
+theme: moving
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag

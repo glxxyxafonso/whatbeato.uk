@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "Space"
+date: 2007-08-18 00:08:00
+excerpt: "Family movies were getting bigger and bigger, extra space on my ATV was needed fast."
+oldurl: "http://arrifana.org/blog/2007/08/space/"
+disqusid: "102 http://arrifana.org/blog/?p=102"
+categories: english tech-stuff
+---
+
+Family movies were getting bigger and bigger, extra space on my [ATV][1] was needed fast.
+
+A quick trip to [FNAC][2] for a cheap 160GB USB2 portable HD and three hacks later ([patchstick][3], [usb storage][4] and [atv files][5]), and I was happy.
+
+```
+bash-2.05b# uname -a
+Darwin appletv.lan 8.8.2 Darwin Kernel Version 8.8.2: Mon Jan 29 18:57:29 PST 2007; root:xnu-792.94.18~1/RELEASE_I386 i386 i386
+bash-2.05b# df -k
+Filesystem   1K-blocks     Used     Avail Capacity  Mounted on
+/dev/disk0s3    921596   448800    463584    49%    /
+devfs               97       97         0   100%    /dev
+fdesc                1        1         0   100%    /dev            512      512         0   100%    /.vol
+/dev/disk0s4  37573000  2741136  34831864     7%    /mnt
+/dev/disk1s2 155954992 25893176 130061816    17%    /mnt/Scratch/Volumes/External
+```
+
+[1]: http://www.apple.com/appletv/
+[2]: http://fnac.pt
+[3]: http://wiki.awkwardtv.org/wiki/Patchstick/Testing
+[4]: http://wiki.awkwardtv.org/wiki/Enable_USB_Storage
+[5]: http://wiki.awkwardtv.org/wiki/ATVFiles

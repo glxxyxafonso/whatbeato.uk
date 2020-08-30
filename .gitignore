@@ -1,4 +1,10 @@
 _site/
+.DS_Store
 .sass-cache/
-.jekyll-cache/
-.jekyll-metadata
+node_modules
+npm-debug.log
+Gemfile.lock
+.jekyll-cache
+dist/
+.env
+package-lock.json
