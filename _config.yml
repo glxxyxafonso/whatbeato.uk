@@ -4,7 +4,7 @@ email: hello at celso dot io
 url: https://celso.io/
 description: > # this means to ignore newlines until "show_excerpts:"
   Paranoid Android
-favicon: "./favicon.ico"
+favicon: "/assets/favicon.ico"
 exclude: [ "_scripts", "workers-site", "README.md", "wrangler.toml", "moving.gemspec", "Gemfile", "Gemfile.lock", "package.json" ]
 show_excerpts: false # set to true to show excerpts on the homepage
   
