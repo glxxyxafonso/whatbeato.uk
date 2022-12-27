@@ -7,10 +7,10 @@
     "install": "npm i @cloudflare/wrangler -g; npm install -g dotenv-cli; sudo gem install bundler; bundle install",
     "jekyll": "bundle exec jekyll build --watch --trace",
     "jekyll-serve": "bundle exec jekyll serve --watch --trace",
-    "jekyll-build": "bundle exec jekyll build",
-    "dev": "bundle exec jekyll build --watch --trace & dotenv -e .env -- wrangler dev --env=production",
-    "staging": "npm run jekyll-build; dotenv -e .env -- wrangler publish --env=staging",
-    "publish": "npm run jekyll-build; dotenv -e .env -- wrangler publish --env=production"
+    "build": "bundle exec jekyll build",
+    "dev": "bundle exec jekyll build --watch --trace & dotenv -f .env -- wrangler dev --env=production",
+    "staging": "npm run jekyll-build; dotenv -f .env -- wrangler publish --env=staging",
+    "publish": "npm run jekyll-build; dotenv -f .env -- wrangler publish --env=production"
   },
   "repository": {
     "type": "git",

@@ -7,4 +7,6 @@ Gemfile.lock
 .jekyll-cache
 dist/
 .env
+.bundle/
+vendor/
 package-lock.json
