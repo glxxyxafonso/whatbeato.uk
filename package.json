@@ -8,6 +8,7 @@
     "jekyll": "bundle exec jekyll build --watch --trace",
     "jekyll-serve": "bundle exec jekyll serve --watch --trace",
     "build": "bundle exec jekyll build",
+    "deploy": "bundle exec jekyll build",
     "dev": "bundle exec jekyll build --watch --trace & dotenv -f .env -- wrangler dev --env=production",
     "staging": "npm run jekyll-build; dotenv -f .env -- wrangler publish --env=staging",
     "publish": "npm run jekyll-build; dotenv -f .env -- wrangler publish --env=production"
