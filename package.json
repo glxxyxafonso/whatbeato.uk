@@ -1,6 +1,6 @@
 {
   "name": "celso.io",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "my blog package.json helper",
   "main": "index.js",
   "scripts": {
