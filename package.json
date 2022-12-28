@@ -4,11 +4,9 @@
   "description": "my blog package.json helper",
   "main": "index.js",
   "scripts": {
-    "install": "npm install -g npx; sudo gem install bundler:2.2.33; bundle install",
-    "jekyll": "bundle exec jekyll build --watch --trace",
-    "jekyll-serve": "bundle exec jekyll serve --watch --trace",
+    "install": "npm install -g npx",
     "build": "bundle exec jekyll build",
-    "dev": "bundle exec jekyll build --watch --trace & dotenv -f .env -- npx wrangler dev --env=production"
+    "dev": "rbenv local 2.7.1 & bundle exec jekyll serve --watch --trace"
   },
   "repository": {
     "type": "git",
