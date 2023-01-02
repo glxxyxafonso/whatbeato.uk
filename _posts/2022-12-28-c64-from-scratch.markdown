@@ -52,7 +52,7 @@ Some chips are regular 74(LS) TTL logic that you can buy brand new, but the othe
 
 * Two [MOS 6526](http://archive.6502.org/datasheets/mos_6526_cia_recreated.pdf), aka the Complex Interface Adapter chips. The CIAs serve as the I/O port controllers. They do parallel, serial, and interval timers and have an integrated "Time Of Day" clock with alarms that almost no software uses. Things like the user ports, disk drives, joysticks, keyboard scanning, and even the blinking cursor depend on the CIAs. The 6526 is a unique chip, but as I write, there is a modern [FPGA-based replacement](https://1nt3r.net/j-cia/) in the beta testing phase, but I didn't consider it.
 
-***Fun fact: the [Commodore Amigas](https://en.wikipedia.org/wiki/Amiga) would later use the improved MOS 8520/8521 chips, which are drop-in compatible with the 6526 (with a few [subtle differences](https://www.lemon64.com/forum/viewtopic.php?t=73742&sid=06f0e0107f7e70eb29eecf33e0ed9fc9) and improvements).***
+***Fun fact: the [Commodore Amigas](https://en.wikipedia.org/wiki/Amiga) would later use the improved MOS 8520/8521 chips, which are drop-in compatible with the 6526 (with a few [subtle differences](https://www.lemon64.com/forum/viewtopic.php?t=73742&sid=06f0e0107f7e70eb29eecf33e0ed9fc9)).***
 
 ![](https://upload.wikimedia.org/wikipedia/commons/7/76/CIA_MOS_6526A.jpg)
 
@@ -62,7 +62,7 @@ Some chips are regular 74(LS) TTL logic that you can buy brand new, but the othe
 
 * The [MOS 6510](http://archive.6502.org/datasheets/mos_6510_mpu.pdf) microprocessor, aka the C64 CPU. A successor to the wildly successful 6502 chip used in the [PET](https://en.wikipedia.org/wiki/Commodore_PET), [VIC20](https://en.wikipedia.org/wiki/VIC-20), [8-bit Ataris](https://en.wikipedia.org/wiki/Atari_8-bit_family), [Apple II](https://en.wikipedia.org/wiki/Apple_II), and even the [BBC Micro](https://en.wikipedia.org/wiki/BBC_Micro) (you have to check out [this website](https://www.team6502.org/) if you want to learn more about the fascinating story of the 6502).
 
-***Fun fact: believe it or not, there are [6502 variants](https://eu.mouser.com/datasheet/2/436/w65c02s-2572.pdf) still being [manufactured](https://www.westerndesigncenter.com/) today, but the 6510 is not. Some adaptors can take a 6502 compatible chip and add the 6510 extra functions using discrete logic. See the [MOS CPU replacer](https://github.com/monotech/MOS_CPU_Replacer). And, of course, someone is working on an [FPGA-based replacement](https://1nt3r.net/j-cpu/), but it's not quite there yet.***
+***Fun fact: believe it or not, there are [6502 variants](https://eu.mouser.com/datasheet/2/436/w65c02s-2572.pdf) still being [manufactured](https://www.westerndesigncenter.com/) today, but the 6510 is not. However, some adaptors can take a 6502 compatible chip and add the 6510 extra functions using discrete logic. See the [MOS CPU replacer](https://github.com/monotech/MOS_CPU_Replacer). And, of course, someone is working on an [FPGA-based replacement](https://1nt3r.net/j-cpu/), but it's not quite there yet.***
 
 ![](https://upload.wikimedia.org/wikipedia/commons/8/85/KL_MOS_6510.jpg)
 
@@ -92,11 +92,11 @@ Other fancier alternatives are the [PLAnkton](https://retro8bitshop.com/product/
 
 #### SID
 
-The [MOS 6581](https://en.wikipedia.org/wiki/MOS_Technology_6581) Sound Interface Device. The SID is a hybrid chip containing both analog and digital circuitry and features three independent voices which can be programmed using different waveforms. It had multiple revisions over time, they say that no two SID chips sound the same.
+The [MOS 6581](https://en.wikipedia.org/wiki/MOS_Technology_6581) Sound Interface Device. The SID is a hybrid chip containing both analog and digital circuitry. It features three independent voices which can be programmed using different waveforms and had multiple revisions over time; they say that no two SID chips sound the same.
 
 Like the VIC II, this chip was also ahead of its time and played a significant role in the C64 success. It helped popularize the [chiptune](https://en.wikipedia.org/wiki/Chiptune) culture and kickstarted a global community of [musicians](https://www.youtube.com/watch?v=m1pchpDD5EU) and [listeners](https://www.hvsc.c64.org/) that still exists today.
 
-Due to its analog nature the SID very failure-prone, hence rare and expensive. So rare that a lot of eBay sellers have the SID chips removed the C64s and sell them separately for maximum profit.
+Due to its analog nature the SID is very failure-prone, hence rare, hence expensive. So rare that a lot of eBay sellers have the SID chips removed the C64s and sell them separately for maximum profit.
 
 It isn't easy to emulate the perfect SID sound in software, but the chip is so popular even today, and there's been so much research around it that there are a few good modern alternatives worth exploring today.
 
