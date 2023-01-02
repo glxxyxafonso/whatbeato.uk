@@ -52,7 +52,7 @@ Some chips are regular 74(LS) TTL logic that you can buy brand new, but the othe
 
 * Two [MOS 6526](http://archive.6502.org/datasheets/mos_6526_cia_recreated.pdf), aka the Complex Interface Adapter chips. The CIAs serve as the I/O port controllers. They do parallel, serial, and interval timers and have an integrated "Time Of Day" clock with alarms that almost no software uses. Things like the user ports, disk drives, joysticks, keyboard scanning, and even the blinking cursor depend on the CIAs. The 6526 is a unique chip, but as I write, there is a modern [FPGA-based replacement](https://1nt3r.net/j-cia/) in the beta testing phase, but I didn't consider it.
 
-***Fun fact: the [Commodore Amigas](https://en.wikipedia.org/wiki/Amiga) would later use the impro MOS 8520/8521 chips, which are drop-in compatible with the 6526 (with a few [subtle differences](https://www.lemon64.com/forum/viewtopic.php?t=73742&sid=06f0e0107f7e70eb29eecf33e0ed9fc9) and improvements).***
+***Fun fact: the [Commodore Amigas](https://en.wikipedia.org/wiki/Amiga) would later use the improved MOS 8520/8521 chips, which are drop-in compatible with the 6526 (with a few [subtle differences](https://www.lemon64.com/forum/viewtopic.php?t=73742&sid=06f0e0107f7e70eb29eecf33e0ed9fc9) and improvements).***
 
 ![](https://upload.wikimedia.org/wikipedia/commons/7/76/CIA_MOS_6526A.jpg)
 
@@ -208,7 +208,7 @@ The next step was getting my [DSO quad](https://www.seeedstudio.com/DSO-Quad-Alu
 * A good C64 running in parallel. Unfortunately, that board is a newer revision with a slightly different clock circuit, but the same principles apply.
 * This page from [Sven's Techsite](http://tech.guitarsite.de/c64_scope.html) documented good scope readings from the C64 boards, which I could use as a reference.
 
-Plus, my friend [Luis Correia](https://mastodon.social/@luisfcorreia) was helping me with suggestions online, which was fun.
+Plus, my friend [Luis Correia](https://luiscorreia.pt/) was helping me with suggestions online, which was fun.
 
 ![](/assets/c64scopedebug.jpg?raw=true)
 

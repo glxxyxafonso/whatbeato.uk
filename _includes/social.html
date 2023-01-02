@@ -29,12 +29,20 @@
       >[Flickr]</a
     >
   </li>
+  {%- endif -%} {%- if social.mastodon -%}
+  <li>
+    <a
+      class="black-link"
+      href="{{ social.mastodon }}"
+    >[Mastodon]</a
+    >
+  </li>
   {%- endif -%} {%- if social.github -%}
   <li>
     <a
       class="black-link"
       href="https://github.com/{{ social.github | cgi_escape | escape }}"
-    > [Github]</a
+    >[Github]</a
     >
   </li>
   {%- endif -%} {%- if social.instagram -%}
