@@ -157,7 +157,7 @@ I ended up buying a modern alternative from [eBay](https://www.ebay.es/itm/35365
 
 #### The modulator
 
-The modulator in the C64 amplifies the luminance and chrominance signals from the VIC II and outputs RF composite S-Video signals.
+The modulator in the C64 amplifies the luminance and chrominance signals from the VIC II and outputs RF, composite and S-Video signals.
 
 I started this project by retrofitting an original modulator from another board. Still, its quality was terrible, so fast forward to a few weeks later, after a few bumps on the road I will describe next, I did another upgrade and replaced it with a "[C64/C128 S-Video Bypass/RF kit](https://videogameperfection.com/products/c64-svideo-bypass/)." There are [other options](https://www.breadbox64.com/blog/c64-rf-modulator-battle/).
 
@@ -177,9 +177,13 @@ The bad news: the 1084 isn't showing the signature C64 BASIC boot screen as it s
 
 ![](/assets/c64outofsync.gif?raw=true)
 
-Ok, this isn't so bad. The video is out-of-sync for some reason, but I think I can see the boot sequence and the blinking cursor in there if I try hard. This tells me that the important stuff, power, CPU, RAM, ROMs, PLA, and CIAs, are all working, and that's a big win for me already.
+The video is out-of-sync for some reason, but I think I can see the boot sequence and the blinking cursor in there if I try hard. This tells me that the important stuff, power, CPU, RAM, ROMs, PLA, and CIAs, are all working, and that's a big win for me already.
 
-What I immediately think might be faulty is either the VIC II chip or something in the clock circuit. I replaced the VIC II chip with another one I tested on a working C64 breadbin. It wasn't it.
+Ok, this isn't so bad.
+
+What I immediately think might be faulty is either the VIC II chip or something in the clock circuit. I replaced the VIC II chip with another one I tested on a working C64 breadbin.
+
+It wasn't it.
 
 It's definetely something in the clock circuit.
 
@@ -193,7 +197,7 @@ The C64 clock circuit creates the color clock from the Y1 crystal oscillator nee
 
 This circuit has a variable resistor R27 that allows fine-tuning the color clock. I played with it, but no luck—still an out-of-sync video.
 
-Then I started getting suspicious about the C86 capacitor since its value didn't match the schematics I was reading or the same capacitor I had on other boards. I changed it to different values.
+Then I started getting suspicious about the C86 capacitor since its value didn't match the schematics or the same capacitor I had on other boards. I changed it a few times.
 
 At some point, I managed to get the video synchronized and get a picture on the 1084 monitor, which made me jump off the chair in excitement, only to realize that:
 
@@ -201,7 +205,9 @@ At some point, I managed to get the video synchronized and get a picture on the 
 * The C64 was not running at normal speed, and the SID wasn't working.
 * It needed constant adjustments on the R27 pot, or the video would easily lose sync again.
 
-That wasn't it. I needed to get my hands dirty and go old school deeper.
+That wasn't it.
+
+I needed to get my hands dirty and go old school.
 
 The next step was getting my [DSO quad](https://www.seeedstudio.com/DSO-Quad-Aluminium-Alloy-Silver-p-1033.html) oscilloscope on and starting probing the lines in the board, trying to find anomalies and their probable source. To help with that, I used two resources:
 
@@ -214,7 +220,7 @@ Plus, my friend [Luis Correia](https://luiscorreia.pt/) was helping me with sugg
 
 ![](/assets/c64debugscope2.jpg?raw=true)
 
-I quickly realized that my clock circuit wasn't generating the correct frequencies or signal amplitudes. It was all messed up, but I couldn't find why.
+I quickly realized that my clock circuit wasn't generating the correct frequencies or signal amplitudes, it was all messed up. But I couldn't find why.
 
 Next up, I started replacing everything I could: the crystal oscillator, the MC4044, the 74LS193, the 74LS629, the 74LS74, and the 2222A transistor. Still, no luck.
 
