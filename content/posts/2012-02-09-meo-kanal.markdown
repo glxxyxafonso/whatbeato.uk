@@ -1,0 +1,34 @@
+---
+categories: portuguese sapo
+date: "2012-02-09T00:02:00Z"
+disqusid: 839 http://arrifana.org/blog/?p=839
+excerpt: Há projectos que são invulgares pela motivação que geram nas equipas e nas
+  organizações. São raros e curiosamente surgem fora dos nossos planos tradicionais
+  e lineares, fora das visões condicionadas, dos retiros e dos brainstorms.
+frontimage: /assets/meo-kanal-1.jpg
+oldurl: http://arrifana.org/blog/2012/02/meo-kanal/
+promote: true
+title: Meo Kanal
+aliases:
+- /portuguese/sapo/2012/02/09/meo-kanal
+---
+
+Há projectos que são invulgares pela motivação que geram nas equipas e nas organizações. São raros e curiosamente surgem fora dos nossos planos tradicionais e lineares, fora das visões condicionadas, dos retiros e dos *brainstorms*.
+
+Há um ano atrás uma pequena equipa tentou vender-me um conceito de um projecto que lhes surgiu espontaneamente. Agarram-me em 10 minutos. Em poucos dias tiveram a energia suficiente para estruturar essa ideia para que juntos conseguíssemos mobilizar todas as áreas da organização necessárias para concretizar essa visão, e semanas depois o projecto era aprovado e apoiado ao mais alto nível pelo grupo aonde trabalhamos.
+
+Durante este tempo todo e até hoje tive o privilégio de trabalhar com esta equipa de elite, cheia de talento e irreverência, que pegou no projecto com unhas e dentes e o levou a cabo com uma determinação que merece ser referida. Obrigado a todos por isso.
+
+Durante este ano que passou construímos no SAPO e na PT o Meo Kanal, um conceito único e na minha opinião brilhante e bem executado, que tem o potencial para democratizar a criação de uma experiência de televisão em Portugal e cujas possibilidades que abre para o futuro são infinitas . [Aqui está ele][1].
+
+E é assim que se trabalha por cá.
+
+![Plano2012](/assets/meo-kanal-1.jpg "Plano2012")
+
+Apresentação interna do projecto, na semana passada. A equipa soube guardar o segredo.
+
+![NewImage](/assets/meo-kanal-2.jpg "NewImage")
+
+Apresentação pública, hoje.
+
+[1]: http://kanal.meo.pt/

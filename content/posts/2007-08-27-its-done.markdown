@@ -1,0 +1,20 @@
+---
+categories: english iphone tech-stuff
+date: "2007-08-27T00:08:00Z"
+disqusid: 240 http://arrifana.org/blog/?p=240
+excerpt: Courage, persistence and hard-work will always make the impossible, possible.
+  Took me about 6h30m hours of unprecedentedly (nano)hardware fiddling, with soldering
+  skills I wasn’t aware I had (no needles, that sucked too), but fuck, I did it. Geohot‘s
+  method, fully unlocked, not the silvercard/supersim crap. Works. Check the gallery.
+  off to bed now.
+oldurl: http://arrifana.org/blog/2007/08/its-done/
+title: It’s done
+aliases:
+- /english/iphone/tech-stuff/2007/08/27/its-done
+---
+
+Courage, persistence and hard-work will always make the impossible, possible. Took me about 6h30m hours of unprecedentedly (nano)hardware fiddling, with soldering skills I wasn’t aware I had (no needles, that sucked too), but fuck, I did it. [Geohot][1]‘s method, fully unlocked, not the silvercard/supersim crap. Works. [Check the gallery][2]. off to bed now.
+
+
+[1]: http://iphonejtag.blogspot.com/
+[2]: http://fotos.sapo.pt/celso/gallery/0000b6zx

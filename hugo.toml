@@ -1,0 +1,63 @@
+baseURL = 'https://celso.io/'
+languageCode = 'en-us'
+title = 'Celso Martinho'
+theme = "archie"
+paginate = 5
+copyright = "© Celso Martinho"
+# Code Highlight
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+[frontmatter]
+  date = [':filename', ':default']
+  section = ['categories']
+
+[permalinks]
+	posts = '/:section/:year/:month/:day/:slugorfilename/'
+
+[params]
+	mode="auto" # color-mode → light,dark,toggle or auto
+	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
+	subtitle = "Paranoid Android"
+	mathjax = true # enable MathJax support
+	katex = true # enable KaTeX support
+
+# Social Tags
+
+[[params.social]]
+name = "Bluesky"
+icon = "cloud"
+url = "https://bsky.app/profile/celso.io"
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/celso"
+
+[[params.social]]
+name = "Linkedin"
+icon = "linkedin"
+url = "https://www.linkedin.com/in/celsomartinho/"
+
+# Main menu Items
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
+
+[module]
+[[module.mounts]]
+    source = 'assets'
+    target = 'static/assets'

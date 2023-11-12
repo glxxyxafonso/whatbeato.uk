@@ -1,0 +1,20 @@
+---
+categories: personal portuguese
+date: "2008-02-23T00:02:00Z"
+disqusid: 339 http://arrifana.org/blog/?p=339
+excerpt: 'Sábado à tarde, chuva e vento lá fora, enquanto me forçam a ver o BabyFirst
+  na sala. Sai um mosaico da bandeira de Portugal com fotos do Flickr com a tag ‘portugal’.
+  Uma brincadeira feita com o MacOSaiX. PNG de 12 Megs aqui. '
+frontimage: /assets/mosaico-1.jpg
+oldurl: http://arrifana.org/blog/2008/02/mosaico/
+title: Mosaico
+aliases:
+- /personal/portuguese/2008/02/23/mosaico
+---
+
+![](/assets/mosaico-1.jpg "photo 1")
+
+Sábado à tarde, chuva e vento lá fora, enquanto me forçam a ver o BabyFirst na sala. Sai um mosaico da bandeira de Portugal com fotos do Flickr com a tag ‘portugal’. Uma brincadeira feita com o [MacOSaiX][1]. PNG de 12 Megs [aqui][2].
+
+[1]: http://homepage.mac.com/knarf/MacOSaiX/
+[2]: /assets/mosaico-1.jpg

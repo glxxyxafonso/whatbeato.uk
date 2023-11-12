@@ -1,0 +1,13 @@
+---
+categories: personal portuguese
+date: "2011-12-23T00:12:00Z"
+disqusid: 753 http://arrifana.org/blog/?p=753
+excerpt: ""
+frontimage: /assets/feliz-2012-1.jpg
+oldurl: http://arrifana.org/blog/2011/12/753/
+title: Feliz 2012
+aliases:
+- /personal/portuguese/2011/12/23/feliz-2012
+---
+
+![Postal Natal SAPO](/assets/feliz-2012-1.jpg "Postal Natal SAPO")

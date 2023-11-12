@@ -1,0 +1,39 @@
+---
+categories: portuguese tech-stuff
+date: "2009-01-04T00:01:00Z"
+disqusid: 390 http://arrifana.org/blog/?p=390
+excerpt: 'Esta coisa de andar a passar as cassetes de VHS para streams de .dv anda-me
+  a provocar ataques colaterais de nostalgia. Quem é que se lembra dos tempos da Fidonet,
+  perguntei eu no Twitter há pouco. É uma boa pergunta para percebermos a nossa ciber-idade,
+  ou o nosso ciber-calo como eu prefiro pensar. Saltaram estes da cartola assim de
+  repente:'
+frontimage: /assets/regiao-36-1.jpg
+oldurl: http://arrifana.org/blog/2009/01/regiao-36/
+promote: true
+title: Região 36
+aliases:
+- /portuguese/tech-stuff/2009/01/04/regiao-36
+---
+
+![FidoNet Mascot](/assets/regiao-36-1.jpg "FidoNet Mascot")
+
+Esta coisa de andar a passar as cassetes de VHS para streams de .dv anda-me a provocar ataques colaterais de nostalgia. Quem é que se lembra dos tempos da Fidonet, [perguntei eu no Twitter][1] há pouco. É uma boa pergunta para percebermos a nossa ciber-idade, ou o nosso ciber-calo como eu prefiro pensar. Saltaram estes da cartola assim de repente:
+
+ * Eu: 2:361/9 (Biosmática)
+ * [Fausto Carvalho][2]: 2:361/1 (Midi-thru)
+ * [Mário Valente][3]: 2:362/4 (via Bat, do Paulo Laureano)
+ * [António Matias][4] Gil 2:362/31
+ * [Frederico Marques][5] 2:36x/y
+
+Mas há mais que eu sei, mostrai-vos. Aliás, [Fausto][6], devias fazer um *post* com a história bem contada porque eu na altura era aprendiz.
+
+E tu que és “chavalo” e não fazes a mínima ideia do que é isto então não sabes o que perdeste. A [Fidonet][7] antecedeu a Internet, o E-mail e os Fóruns, era global e distribuida. Já tinha endereçamento e routing, e funcionava principalmente através das BBS e dos velhos modems de 1200/2400 bauds.
+
+
+[1]: http://twitter.com/celso/status/1095831247
+[2]: http://twitter.com/rubikoO/statuses/1095849858
+[3]: http://twitter.com/mvalente/statuses/1095900741
+[4]: http://twitter.com/agil/statuses/1095907056
+[5]: http://twitter.com/vonfreud/statuses/1095915962
+[6]: http://labs.sapo.pt/ua/cfausto/
+[7]: http://en.wikipedia.org/wiki/FidoNet
