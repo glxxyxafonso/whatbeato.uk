@@ -1,6 +1,7 @@
 ---
 categories: personal portuguese
 date: "2007-09-29T00:09:00Z"
+hidden: true
 disqusid: 249 http://arrifana.org/blog/?p=249
 excerpt: Há muitas coisas que me irritam. Agora que sou Pai e que tenho muito menos
   tempo para humm desperdícios de tempo, tornei-me  mais objectivo e menos tolerante,

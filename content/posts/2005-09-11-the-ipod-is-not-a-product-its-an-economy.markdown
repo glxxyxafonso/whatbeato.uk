@@ -1,7 +1,7 @@
 ---
 categories: english tech-stuff
 date: "2005-09-11T00:09:00Z"
-disqusid: 37 http://arrifana.org/blog/?p=37
+hidden: true
 excerpt: That’s right. Like cellphones, the iPod has long entered the accessories
   scam market. In fact, the iPod it self is not even Apple’s big profit but instead
   the economy that lives around it. Proof of it is that the accessory count as reach

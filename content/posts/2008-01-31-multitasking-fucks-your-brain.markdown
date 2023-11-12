@@ -1,6 +1,7 @@
 ---
 categories: personal portuguese
 date: "2008-01-31T00:01:00Z"
+hidden: true
 disqusid: 329 http://arrifana.org/blog/?p=329
 excerpt: Este artigo apareceu recentemente no /. e achei-o interessante, talvez por
   afinidade é certo, mas vale a pena ler.

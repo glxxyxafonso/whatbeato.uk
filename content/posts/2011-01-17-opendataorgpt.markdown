@@ -1,7 +1,7 @@
 ---
 categories: portuguese
 date: "2011-01-17T00:01:00Z"
-disqusid: 596 http://arrifana.org/blog/?p=596
+hidden: true
 excerpt: Eu já falei neste blog de dados públicos há uns anos atrás.
 frontimage: /assets/opendataorgpt-1.jpg
 oldurl: http://arrifana.org/blog/2011/01/opendata-org-pt/

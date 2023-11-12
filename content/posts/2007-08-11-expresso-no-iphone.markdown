@@ -1,7 +1,7 @@
 ---
 categories: portuguese tech-stuff
 date: "2007-08-11T00:08:00Z"
-disqusid: 224 http://arrifana.org/blog/?p=224
+hidden: true
 excerpt: O senhor João Ramos publicou este fim de semana uma peça no suplemento de
   economia do Expresso intitulada “Nokia com novo fôlego”. Ora eu coloco a Nokia no
   topo das empresas que inovam e surpreendem (e ainda por cima suportam o Opensource)

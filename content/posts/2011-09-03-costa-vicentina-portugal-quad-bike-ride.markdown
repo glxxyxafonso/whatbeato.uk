@@ -20,6 +20,6 @@ Recently I bought a goPro camera, great device, and a bunch of accessories to go
 I took the time and patience and experimented with a lot of the camera accessories, mounting the goPro in different places on the bike and different configurations and I gathered some ~30 gigs of 720p footage. Also I’m learning more and more FCPX techniques so this was a great chance to improve my skills. This is the edited result. Hope you like it.
 
 
-{% include vimeo.html id="28558126" %}
+{{< vimeo 28558126 >}}
 
 [1]: http://x3.s0.sl.pt

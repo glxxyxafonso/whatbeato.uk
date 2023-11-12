@@ -20,7 +20,7 @@ Congratulations to the Ultimaker team for making such a wonderful machine and pu
 
 The time-lapse was made using a Canon 5DM2 camera and software, Time Lapse Assembler, Final Cut Pro X and Garage Band for composing the music. Enjoy.
 
-{% include youtube.html id="dabMHz5CiCY" %}
+{{< youtube dabMHz5CiCY >}}
 
 [1]: http://rd3.videos.sapo.pt/EUEF2ZiY5RqHoevCHYzt/mov/39
 [2]: https://vimeo.com/41365057

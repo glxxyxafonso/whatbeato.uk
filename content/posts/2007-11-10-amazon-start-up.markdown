@@ -1,6 +1,7 @@
 ---
 categories: english tech-stuff
 date: "2007-11-10T00:11:00Z"
+hidden: true
 disqusid: 267 http://arrifana.org/blog/?p=267
 excerpt: I’m a huge fan of Amazon. The way they turned just a successful book selling
   platform into one of the coolest internet companies and teams in the world, fighting

@@ -1,7 +1,7 @@
 ---
 categories: portuguese
 date: "2005-08-10T00:08:00Z"
-disqusid: 27 http://arrifana.org/blog/?p=27
+hidden: true
 excerpt: 'Alguém me consegue explicar porque é que este povo lusitano, quando viaja
   de avião (normalmente quando o faz em bloco), bate palmas quando o aparelho aterra
   ? Decerto que o tema já foi amplamente debatido mas eu não estou esclarecido e isto

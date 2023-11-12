@@ -1,6 +1,7 @@
 ---
 categories: portuguese tech-stuff
 date: "2007-10-10T00:10:00Z"
+hidden: true
 disqusid: 254 http://arrifana.org/blog/?p=254
 excerpt: Que dia é hoje ? Não interessa, mas é um bom dia. É o dia em que um dos mais
   fascinantes projectos do SAPO dos últimos tempos deu à luz, só para usar a metáfora

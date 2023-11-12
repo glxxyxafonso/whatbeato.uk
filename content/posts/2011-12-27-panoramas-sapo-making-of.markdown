@@ -22,7 +22,7 @@ More than 2000 hours of computing processing, 32.000 photo shots, 6TB of data an
 
 I was lucky enough to be allowed to hang with these guys. My small contribution to the team is this “making of” video which I now make available. Best seen in full screen. We hope you like it.
 
-{% include youtube.html id="xbohZbkNJ4E" %}
+{{< youtube xbohZbkNJ4E >}}
 
 [1]: https://twitter.com/baiavieira
 [2]: https://twitter.com/ppinheiro76
