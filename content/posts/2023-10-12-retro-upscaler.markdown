@@ -30,7 +30,7 @@ Driving a modern LCD via VGA, from my Amiga 1000 15Khz RGB signals, full screen,
 
 ![](/assets/gbscontrol3.jpg)
 
-And the Web UI that you can access to control every little detail you can imagine, here using the debug view. One another great feature of GBS-control is that you can save profiles with difference settings for different devices.
+And the Web UI that you can access to control every little detail you can imagine, here using the debug view. Another great feature of GBS-control is that you can save profiles with different settings for different devices.
 
 ![](/assets/gbscontrol4.png)
 
