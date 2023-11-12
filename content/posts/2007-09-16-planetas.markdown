@@ -1,6 +1,7 @@
 ---
 categories: portuguese tech-stuff
 date: "2007-09-16T00:09:00Z"
+hidden: true
 disqusid: 244 http://arrifana.org/blog/?p=244
 excerpt: Já só faltava eu falar sobre planetas.
 oldurl: http://arrifana.org/blog/2007/09/planetas/

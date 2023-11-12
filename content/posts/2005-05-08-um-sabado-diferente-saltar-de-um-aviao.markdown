@@ -44,13 +44,13 @@ Pessoalmente e como já devem ter percebido pela descrição que fiz fiquei fã 
 
 ![Dsc01244](/assets/um-sabado-diferente-saltar-de-um-aviao-4.jpg "Dsc01244")
 
-![Dsc01245](/assets/um-sabado-diferente-saltar-de-um-aviao-5.jpg "Dsc01245")]
+![Dsc01245](/assets/um-sabado-diferente-saltar-de-um-aviao-5.jpg "Dsc01245")
 
-![Dsc01249](/assets/um-sabado-diferente-saltar-de-um-aviao-6.jpg "Dsc01249")]
+![Dsc01249](/assets/um-sabado-diferente-saltar-de-um-aviao-6.jpg "Dsc01249")
 
-![Dsc01251](/assets/um-sabado-diferente-saltar-de-um-aviao-7.jpg "Dsc01251")]
+![Dsc01251](/assets/um-sabado-diferente-saltar-de-um-aviao-7.jpg "Dsc01251")
 
-![Dsc01254](/assets/um-sabado-diferente-saltar-de-um-aviao-8.jpg "Dsc01254")]
+![Dsc01254](/assets/um-sabado-diferente-saltar-de-um-aviao-8.jpg "Dsc01254")
 
 [2]: http://www.blue-emotions.pt/
 [3]: http://castelosdeportugal.no.sapo.pt/almourol.htm

@@ -1,7 +1,7 @@
 ---
 categories: english tech-stuff
 date: "2007-08-18T00:08:00Z"
-disqusid: 102 http://arrifana.org/blog/?p=102
+hidden: true
 excerpt: Family movies were getting bigger and bigger, extra space on my ATV was needed
   fast.
 oldurl: http://arrifana.org/blog/2007/08/space/

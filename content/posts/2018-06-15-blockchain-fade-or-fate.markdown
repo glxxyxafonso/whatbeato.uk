@@ -1,6 +1,7 @@
 ---
 categories: blockchain
 date: "2018-06-15T00:08:00Z"
+hidden: true
 excerpt: Blockchain has been at the center of the tech headlines lately, dividing
   the community between ferocious advocates, who think decentralization will revolutionize
   the digital landscape, and sound skeptics, who have been around for long enough

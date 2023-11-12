@@ -1,9 +1,9 @@
 /* Markdown */
 :root{
---maincolor: red;
---bordercl:rebeccapurple;
---callouctcolor:dodgerblue;
---hovercolor:navy;
+--maincolor: #70A4B2;
+--bordercl:#6F3D86;
+--callouctcolor:#352879;
+--hovercolor:#6C5EB5;
 --darkMaincolor: #50fa7b;
 }
 html {
@@ -143,7 +143,8 @@ header .main {
   font-size: 1.5rem;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-size: 1.2rem;
+  font-family: "Commodore 64 Pixelized";
+  font-size: 1.3rem;
   margin-top: 2em;
 }
 

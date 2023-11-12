@@ -1,6 +1,7 @@
 ---
 categories: english tech-stuff
 date: "2005-12-19T00:12:00Z"
+hidden: true
 disqusid: 78 http://arrifana.org/blog/?p=78
 excerpt: Do not trust anyone. Everyone’s fighting for their big chunk of easy audience
   and quick fame, at any cost. Don’t bet your bucks on that good old trusty brand,

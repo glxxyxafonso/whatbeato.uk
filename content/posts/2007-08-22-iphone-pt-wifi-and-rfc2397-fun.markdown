@@ -1,7 +1,7 @@
 ---
 categories: english tech-stuff
 date: "2007-08-22T00:08:00Z"
-disqusid: 236 http://arrifana.org/blog/?p=236
+hidden: true
 excerpt: I told you rfc2397 was good for offline storage didn’t I ? Here’s a program
   (source) that generates two bookmarks. Each of those are actually javascript programs
   customized with your PT-WIFI credentials.

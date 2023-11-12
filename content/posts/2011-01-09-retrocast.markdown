@@ -96,7 +96,7 @@ In case you can’t try it, here’s a video of what would happen.
 
 #### Demo
 
-{% include youtube.html id="EbTTM0W72gA" %}
+{{< youtube EbTTM0W72gA >}}
 
 #### Next Steps
 

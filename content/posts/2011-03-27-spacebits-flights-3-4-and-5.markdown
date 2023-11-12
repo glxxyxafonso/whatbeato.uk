@@ -32,7 +32,7 @@ And so the day arrived. We successfully launched and recovered 3 HABs in one sho
 
 For the better, we've made this awesome video of the whole thing, using footage from a lot of people on the ground and the on-board cameras from the balloons. We think you'll like it.
 
-{% include youtube.html id="7MHo5Rm6G-I" %}
+{{< youtube 7MHo5Rm6G-I >}}
 
 [1]: http://spacebits.eu/
 [2]: http://spacebits.eu/page/flight345report.html

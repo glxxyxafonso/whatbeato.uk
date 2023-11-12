@@ -1,7 +1,7 @@
 ---
 categories: portuguese
 date: "2008-07-28T00:07:00Z"
-disqusid: 298 http://arrifana.org/blog/?p=298
+hidden: true
 excerpt: Não sou grande fã da Clara Ferreira Alves mas honra seja feita, e especialmente
   porque assumo pela leitura do seu texto que ela nem sequer é uma consumidora obcecada da
   Web, não conseguiria ter escrito melhor sobre este tema tão actual que é a “information

@@ -1,6 +1,7 @@
 ---
 categories: portuguese tech-stuff
 date: "2008-02-17T00:02:00Z"
+hidden: true
 disqusid: 337 http://arrifana.org/blog/?p=337
 excerpt: A visualização de dados fascina-me. Quando acrescentamos perspectiva a dados
   aparentemente unidimensionais, seja através de um vídeo ou de uma imagem, ou de

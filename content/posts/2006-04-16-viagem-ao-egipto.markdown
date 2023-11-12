@@ -1,7 +1,7 @@
 ---
 categories: personal portuguese
 date: "2006-04-16T00:04:00Z"
-disqusid: 107 http://arrifana.org/blog/?p=107
+hidden: true
 excerpt: A melhor forma de aprender a viver e de dar valor ao que temos é a viajar,
   viajar muito. Este será um dos ensinamentos que incutirei aos meus filhos. Não há
   nada nesta vida que nos exponha a tanta diversidade, que coloque tantas verdades
@@ -9,7 +9,6 @@ excerpt: A melhor forma de aprender a viver e de dar valor ao que temos é a via
   com culturas e países diferentes daquele em que vivemos. Não há livro que nos consiga
   transmitir esta experiência nem a sabedoria que daí advém.
 frontimage: /assets/viagem-ao-egipto-1.jpg
-oldurl: http://arrifana.org/blog/2006/04/viagem-ao-egipto/
 title: Viagem ao Egipto
 aliases:
 - /personal/portuguese/2006/04/16/viagem-ao-egipto
