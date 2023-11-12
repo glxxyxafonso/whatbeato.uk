@@ -1,0 +1,30 @@
+---
+categories: tech-stuff
+date: "2007-06-21T00:06:00Z"
+disqusid: 210 http://arrifana.org/blog/?p=210
+excerpt: Bought the iWoz book in London last weekend and read it all during my trip
+  to Seattle (more on this later, I promise). The book is sort of a biography from
+  Steve Wozniak, his relationships and life, entrepreneurship, and a big emphasis
+  on the Apple I and the Apple creation.
+oldurl: http://arrifana.org/blog/2007/06/iwoz/
+title: iWoz
+aliases:
+- /tech-stuff/2007/06/21/iwoz
+---
+
+Bought the [iWoz book][1] in London last weekend and read it all during my trip to Seattle (more on this later, I promise). The book is sort of a biography from [Steve Wozniak][2], his relationships and life, entrepreneurship, and a big emphasis on the [Apple I][3] and the [Apple][4] creation.
+
+The book is as easy reading as it gets, and because of the simple and sincere way Woz exposes his personal fears and secrets it’s really passionate reading for geeks of all ages. Plus it has so many parallels and similarities with myself and my still young career and life and what I went through, yes, including the [Phone phreaking][5] part, if that’s what you’re wondering.
+
+Another interesting worth mentioning bit of this story is how Woz takes on Steve Jobs (and forgives him) on several situations during his life, including the way he robbed him on the [Breakout/Nintendo project][6] and the nasty episode with his Apple quit and the creation of the [CL 9][7] company.
+
+So if you’re a geek, entrepreneur, and lived through the golden ages of Z-80, Commodore and all the 80s personal computers and electronics passion, or just one of the three, go and get it now, it’s worth.
+
+
+[1]: http://www.amazon.com/iWoz-Computer-Invented-Personal-Co-Founded/dp/0393061434
+[2]: http://en.wikipedia.org/wiki/Steve_Wozniak
+[3]: http://en.wikipedia.org/wiki/Apple_I
+[4]: http://apple.com/
+[5]: http://en.wikipedia.org/wiki/Phreaking
+[6]: http://en.wikipedia.org/wiki/Breakout
+[7]: http://en.wikipedia.org/wiki/CL_9

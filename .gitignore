@@ -1,12 +1,7 @@
-_site/
 .DS_Store
-.sass-cache/
 node_modules
 npm-debug.log
-Gemfile.lock
-.jekyll-cache
-dist/
 .env
-.bundle/
-vendor/
-package-lock.json
+/public/
+/resources/_gen/
+.hugo_build.lock

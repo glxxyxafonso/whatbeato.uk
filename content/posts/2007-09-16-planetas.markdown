@@ -1,0 +1,45 @@
+---
+categories: portuguese tech-stuff
+date: "2007-09-16T00:09:00Z"
+disqusid: 244 http://arrifana.org/blog/?p=244
+excerpt: Já só faltava eu falar sobre planetas.
+oldurl: http://arrifana.org/blog/2007/09/planetas/
+title: Planetas
+aliases:
+- /portuguese/tech-stuff/2007/09/16/planetas
+---
+
+Já só faltava eu falar sobre planetas.
+
+Nunca os percebi. O meu agregador é o meu leitor de RSS e o meu planeta é a soma das minhas subscrições individuais. Claramente algo me estava a escapar (1).
+
+Nos últimos tempos tenho falado com diversas pessoas sobre a utilidade e as mais valias dos agregadores públicos. Até aceitei um convite antigo e persistente para integrar um. Mas por muitas experiências que faça para tentar compreender o fenómeno aparente da popularidade dos mesmos, as minhas interrogações e as minhas convicções permanecem. Vejam comigo:
+
+Para o subscritor.
+
+1. Um planeta para mim só tem interesse se o tema que agrega for uma especialidade e se tiver critérios apertados de controle de qualidade. Por exemplo, eu assino o [Planet Mysql][1] e aquilo tem muita relevância para mim porque trata exclusivamente de artigos sobre Mysql e a sua nuvem de autores são na maioria contribuintes de código ou evangelistas reconhecidos do produto.
+
+2. Qualquer planeta que agregue indiscriminadamente várias especialidades ou (pior) que as misture com autores de temas generalistas, fica automaticamente descaracterizado e tem ZERO interesse para mim, e atrevo-me a dizer, para a maioria das pessoas que conheço. Zero, nenhum, é lixo.
+
+3. O volume de posts. Mais não é melhor. Quem acredita em planetas de volume devia primeiro fazer um pequeno estudo de comportamento de utilizadores de feeds de RSS. A tecla de shortcut que eu melhor conheço no [NNW][2] é sem margem para dúvidas a de marcar todo o feed como lido (é o maçã-K). Se eu conseguir resistir ao ímpeto de marcar como lido um feed de 50 posts no primeiro contacto, faço-o sem misericórdia quando encontro o primeiro post a falar de Scolari, é certinho.
+
+Para o blogger:
+
+A primeira ideia que nos vem à cabeça é que um blogger agregado num planeta tem como principal benefício uma maior divulgação dos seus conteúdos, e como tal, recebe mais tráfego de volta. E tendo em conta que uma página de um planeta, pelas características das relações que tem com outros sites, tem normalmente um bom ranking nos motores de pesquisa e usufrui também de alguns efeitos de networking, então mais tráfego é provavelmente o resultado.
+
+Mas não me parece. Parece-me mais uma falácia e um ciclo viciado. Explico porquê:
+
+1. Em primeiro lugar qualquer Blog que tenha como meio para atingir mais tráfego o de usar o networking ou SEO antes do primário investimento em qualidade, relevância ou importância do que lá escreve, está condenado ao esquecimento e a indiferença. Não há planeta ou técnica manhosa que o salve disto.
+
+2. Quando o grupo é desigual os Blogs pequenos ganham mas o grandes perdem. Os pequenos ganham porque beneficiam da grandiosidade dos populares e os grandes perdem porque 1. o tráfego adicional que recebem nem lhes mexe no ponteiro 2. a sua imagem e prestígio ficam de certa forma comprometidos pela falta de qualidade e inutilidade (ou desenquadramento) dos restantes. Tal como na vida real, os grupos de amigos funcionam quando há interesses comuns e valores que se partilham e quando se sentem todos satisfeitos por estarem juntos, não há muita diferença. Não funciona.
+
+3. Porque raio há-de alguém querer ter pessoas por perto que não se identificam com o que escreve? Que interesse para além da embriaguez da imediata grande divulgação do seu pequeno Blog poderá ter um autor em impingir diariamente os seus pensamentos a uma audiência que não se revê com o que diz? Ultrapassa-me.
+
+E por isto continuo a não perceber a generalidade dos planetas dos quais tanto se fala. Claramente algo me continua a escapar (2).
+
+Numa nota relacionada acresce-me dizer que me identifico com [este famoso post][3] da Joninhas que apanhei por aí, e que acho que em Portugual não há uma Blogesfera como os jornalistas gostam de designar mas sim um Blogouriço (TM), assim uma coisa mais ou menos redonda mas cheia de espinhos e irregularidades que podem doer muito se lhes tocarmos, mas que está longe de ser a distribuição perfeita e harmoniosa de energia que “esfera” implica.
+
+
+[1]: http://www.planetmysql.org/
+[2]: http://www.newsgator.com/Individuals/NetNewsWire/
+[3]: http://jonasnuts.blogs.sapo.pt/98526.html

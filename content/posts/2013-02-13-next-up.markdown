@@ -1,0 +1,33 @@
+---
+categories: tech-stuff
+date: "2013-02-13T00:02:00Z"
+disqusid: 885 http://arrifana.org/blog/2013/02/next-up/
+excerpt: Aproximam-se dois eventos que devo mencionar para os quais fui convidado
+  a exortar sobre certos e determinados temas.
+frontimage: /assets/next-up-2.jpg
+oldurl: http://arrifana.org/blog/2013/02/next-up/
+title: Next up
+aliases:
+- /tech-stuff/2013/02/13/next-up
+---
+
+Aproximam-se dois eventos que devo mencionar para os quais fui convidado a exortar sobre certos e determinados temas.
+
+Curiosamente e para variar, em ambos elaborarei não sobre SAPO, tecnologia, empreendedorismo ou balões mas sim sobre temáticas radicalmente diferentes. Temos tudo para que corra mal, portanto. Agrada-me.
+
+Primeiro, o [TEDxIST][1], organizado por alunos do Instituto Superior Técnico para falar sobre… coisas que estão a acontecer nas quais eu acredito muito.
+
+Segundo, [World Failurists Congress][2], um conceito de conferência absolutamente novo e original que gira à volta de uma característica importantíssima sempre presente em qualquer caso de sucesso, uma em que aparentemente me [reconhecem][3] muita experiência: o redondo falhanço. Reza que o meu nome foi sugerido pelos que que trabalham diretamente comigo, não sei. 
+
+Lá estarei, com muito prazer.
+
+[![NewImage](/assets/next-up-1.jpg "NewImage")][4]
+
+[![NewImage](/assets/next-up-2.jpg "NewImage")][5]
+
+
+[1]: http://tedxist.ist.utl.pt
+[2]: http://worldfailuristscongress.wordpress.com
+[3]: http://saber.sapo.pt/wiki/Celsada
+[4]: http://tedxist.ist.utl.pt
+[5]: http://worldfailuristscongress.wordpress.com

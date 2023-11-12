@@ -1,0 +1,13 @@
+---
+categories: portugal portuguese sapo
+date: "2011-09-04T00:09:00Z"
+disqusid: 682 http://arrifana.org/blog/?p=682
+excerpt: ""
+frontimage: /assets/16-1.jpg
+oldurl: http://arrifana.org/blog/2011/09/sapo-16/
+title: "16"
+aliases:
+- /portugal/portuguese/sapo/2011/09/04/16
+---
+
+![NewImage](/assets/16-1.jpg "NewImage")
