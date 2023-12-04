@@ -1,0 +1,40 @@
+---
+categories: demoscene
+date: "2023-10-12T14:08:00Z"
+title: Inércia 2023
+---
+
+Filipe Cruz (aka [psenough](https://www.patreon.com/psenough)) invited me to [Inércia 2023](https://2023.inercia.pt/), a local Demoscene event organized by the [Associação Inércia](https://inercia.pt/) that took place in the infamous [Incrível Almadense](https://incrivelalmadense.pt/). I've done my fair share of bouncing ball assembly demos in the 80s and others more [recently](https://github.com/celso/c64), but I don't qualify as a demoscener, not even by the lowest standards. Still, I promptly accepted the invitation. I participated in a panel that discussed the struggles and strategies of organizing community events. Then, later in the evening, I told the story about why and how I built my [Frankenstein 64](https://celso.io/posts/2022/12/28/c64-from-scratch/). There is some interception between retrocomputing and the demoscene, so it made sense.
+
+![](/assets/inercia1.jpg)
+
+Me, my [MOS](https://en.wikipedia.org/wiki/MOS_Technology) tee and a backpack packed with retrocomputing gadgets, ready for Inércia.
+
+I'm glad I did it because I had a blast. I met some old friends and enjoyed attending the event and seeing some other presentations and demos; there was so much raw creativity and talent. It reminded me of the old days when we attended grassroots code hackathons, pre-[Codebits](https://en.wikipedia.org/wiki/SAPO_Codebits), or the early stages of the [Maker](https://web.archive.org/web/20150925091509/http://makerfairelisbon.com/en/2015/workshops.html#gsc.tab=0) movement. Folks were there exclusively to share their work and experiences and have fun.
+
+Anyway, I had a lot of fun talking about why and how I built a Commodore 64 from "scratch"; it was very raw, with no slides or preparation; I just got on the stage and told the story while following my long form [Building a Frankenstein 64](https://celso.io/posts/2022/12/28/c64-from-scratch/) blog. People were genuinely engaged, which was nice. When I finished, I decided to plug the C64 into the stage HDMI input via a video converter, which I brought in my backpack. I wasn't expecting it to work; these things tend to stop working when you don't use them. But it did. I played [The Great Sisters](https://www.youtube.com/watch?v=QL3fje5WRrY) for 10 seconds and left the stage with a smile.
+
+![](/assets/inercia2.jpg)
+
+I also finally met [João Diogo Ramos](https://www.youtube.com/watch?v=Sz82gEFWt3w), the founder of the [LOAD ZX Spectrum Museum](https://loadzx.com/). We've been exchanging emails for years but have never met in person. Yesterday, we did; it was great; he's a maker and entrepreneur with lots of energy and ideas. I owe him a visit to the museum, which I will organize very soon.
+
+![](/assets/inercia3.jpg)
+
+I loved the retrocomputing corner, too, obviously. [Rui Martins](https://www.youtube.com/watch?v=D2G-3x1e2Cc) brought a bunch of machines to show at the venue and helped the participants with free repair jobs. One Sinclair 2068 was being fixed. A BBC Master and a Dragon 32, two famous British rarities, were displayed connected to TVs and working. Funny enough, I crossed with Rui's projects in the Interwebs before; he presented his [512Kb ROM cartridge at FOSDEM](https://www.youtube.com/watch?v=_SibY93sX0I) a few years ago, and I commented on the video because I was impressed. He remembered — small world.
+
+![](/assets/inercia4.jpg)
+
+Finally, I reconnected with Afonso Muralha. I'm a massive fan of [Afonso's work](https://github.com/afonsus1997?tab=repositories). He was a Pixels Camp habitué, and in 2019, he built us a prototype of a beautiful [LED matrix display PCB badge](https://github.com/afonsus1997/Pixels-Camp-PCB-Badge). This year, he went all in into the [badge life](https://hackaday.com/tag/badgelife/) and designed 30 PCB badges for the winners of the Inércia event. The badge has a 3½-inch floppy disk form and boasts an entire computer around an [RP2-B2 ARMCortex-M0](https://eu.mouser.com/new/raspberry-pi/raspberry-pi-rp2040-chip/#Bullet-1) microprocessor with GPIO pins, USB-C, mass storage, and even a speaker. If the reference sounds familiar, the same chip powers the popular [Raspberry RP2040](https://www.raspberrypi.com/products/rp2040/); that's why, Afonso kindly gifted me one of the Inércia badges.
+
+![](/assets/inercia5.jpg)
+
+... and, when I least expected, the finalized version of the Pixels Camp 2019 badge. I was speechless. Thank you so much!
+
+![](/assets/inercia6.gif)
+
+Anyway, great fun. It takes a lot of work to organize events. Smaller or bigger, finding the right people, the financial support, the right partners, and even mobilizing the community to attend them is always an arduous journey. I hope Filipe and the team keep trying; it's worth it. I'll be there again next year for sure.
+
+* Inércia 2023: https://2023.inercia.pt/
+* Inércia Association: https://inercia.pt/
+* ScenePT Discord: https://discord.gg/A4z4ccJCep
+
