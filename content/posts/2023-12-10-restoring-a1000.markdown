@@ -1,0 +1,11 @@
+---
+categories: amiga
+date: "2023-12-10T14:08:00Z"
+title: Restoring an Amiga 1000
+---
+
+Many of you might be familiar with the Amiga 500 or later models, but the Commodore A1000 was the first model of the Amiga series produced, and for many, me included, it's the most important machine of the 16-bit revolution period that marks the beginning of Commodore's last success cycle in the history of personal computing. It's also an aesthetically beautiful machine worth preserving.
+
+In a bizarre twist of events, Jack Tramiel, who founded Commodore and led it through over 30 years, including during the highly successful C64 cycle, resigned from the company, took many people with him, and bought Atari, which was struggling financially. A few months later, Commodore bought the Amiga Corporation and repaid the Atari investment, excluding it from further involvement in the project. It's a funny story worth learning more about, how the Amigas could easily never have existed or turned out to be an Atari product instead.
+
+
