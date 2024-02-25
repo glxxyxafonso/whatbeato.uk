@@ -1,0 +1,223 @@
+---
+categories: retrocomputing
+date: "2024-01-04T17:08:00Z"
+title: My finest C64/128 setup so far
+---
+
+The C128 is a [fascinating](https://www.c64-wiki.com/wiki/Commodore_128) and unusual machine. It was the last 8-bit Commodore machine before the Amiga and co-existed with the C64 series for a while. They sold ~8 million units worldwide (vs ~17 million C64). I never owned one, but I fondly remember playing with one at my friend's place and seeing them in computer shops.
+
+![](/assets/c128/c128-0.jpeg)
+
+It's fully backward compatible with its predecessor in C64 mode, but in native C128 mode it takes advantage of its 128 KB RAM, higher clocked 2 MHz 6510 variant (the 8502), and the improved VIC-IIe graphics chip.
+
+But that's not all; the C128 has a second CPU, a Zilog [Z80](https://en.wikipedia.org/wiki/Zilog_Z80), and a second graphics chip, the [VDC](https://en.wikipedia.org/wiki/MOS_Technology_8563) (MOS 8563), capable of doing RGBi and 80 columns, enabling running CP/M on the machine.
+
+If you want to know more about the story of how the C128 came out to be, which you should because it's fascinating, please see this [8-Bit Guy interview](https://www.youtube.com/watch?v=wzMsgnnDIRE) with its hardware designer, [Bill Herd](https://en.wikipedia.org/wiki/Bil_Herd); I guarantee it's well worth the 30 minutes. One of the things worth spoiling from the interview is that Bill and the team were free to design the C128 according to their own ideas; they had no business requirements, so they deliberately made it "weird," hobbyist-friendly, and hackable.
+
+Anyway, you know where this is going.
+
+I got a C128.
+
+A few months ago, I found a good deal on a used and malfunctioning [C128DCR](https://www.c64-wiki.com/wiki/C128DCR) on [Amibay](https://www.amibay.com/), a popular marketplace for Commodore hardware in the retro-computing community, and just couldn't resist.
+
+![](/assets/c128/c128-1.jpeg)
+
+The DCR variant comes in a sturdy metal case with an integrated power supply, a 1571 internal drive, and has an external keyboard, mimicking the IBM PCs of the time.
+
+![](/assets/c128/c128-2.jpeg)
+
+Not so bad, but it needs cleaning. My Compucleaner air duster, a bottle of isopropyl spray, and a toothbrush will do the job.
+
+![](/assets/c128/c128-3.jpeg)
+
+Much better!
+
+![](/assets/c128/c128-4.jpeg)
+
+Good to know that the entity 39 tested it.
+
+![](/assets/c128/c128-5.jpeg)
+
+It turns out that when I turned it on, it worked, kind of.
+
+The video was unstable. I've been around C64s [long enough](https://celso.io/posts/2022/12/28/c64-from-scratch/) to narrow the problem to a faulty VIC-IIe chip. I looked up on eBay and found a replacement, which fixed the issue.
+
+Here it is connected to my [1084S](https://www.c64-wiki.com/wiki/Commodore_1084) running [Monty on the Run](https://www.c64-wiki.com/wiki/Monty_on_the_Run).
+
+![](/assets/c128/c128-6.jpeg)
+
+# Upgrades
+
+What comes next is a series of enhancements and upgrades that I did over months, to make this C128DCR the best and my primary C64/128 setup at home.
+
+## S-Video Bypass/RF replacement
+
+Despite their unique features at the time, the VIC chips were never known for excellent quality video signals. Artifacts like the [jail bars](https://a4000bear.neocities.org/jail/jail), [color bleeding](https://www.breadbox64.com/blog/the-lumafix64-mod/) due to inadequate voltages, or noise interference injected by the onboard RF modulators, also not great, have always been issues across multiple machine models and chip revisions. The enhanced VIC-IIe in the C128 is notoriously better than the VIC-II in the C64s but is still not perfect.
+
+One way to improve the video output is to completely bypass the onboard RF modulator by removing it and replacing it with a modern high-bandwidth amplifier circuit. This and using separated Luma and Chroma signals (also known as S-Video), provides noise reduction and a sharper picture.
+
+Video Game Perfection sells a good [S-Video Bypass/RF replacement kit](https://videogameperfection.com/products/c64-svideo-bypass/) that is compatible with the C128. I installed one. The downside of not having the original RF modulator is that you lose, well, the obsolete RF signal to use with very old television sets. Not a requirement I have, at all.
+
+![](/assets/c128/c128-7.jpeg)
+
+## RGBtoHDMI, LumaCode, VICIIdizer
+
+Bear with me; this combination is art.
+
+[RGBtoHDMI](https://github.com/hoglet67/RGBtoHDMI) is a very cool open source and hardware project from [David Banks](https://github.com/hoglet67) and Ian Bradbury that uses a Raspberry Pi Zero running bare-metal code and a [CPLD](https://en.wikipedia.org/wiki/Complex_programmable_logic_device) to convert analog RGB/YUV signals from vintage computers to pixel-perfect HDMI signal with extremely low-latency (~4ms.)
+
+But if latency alone doesn't blow other scalers like the [GBS-8220](/posts/2023/10/12/retro-upscaler/) out of the water, RGBtoHDMI outputs really sharp edged pixels. From the project [wiki](https://github.com/hoglet67/RGBtoHDMI/wiki):
+
+RGBtoHDMI integer scaling output:
+
+![](/assets/c128/rgbinteger.jpg)
+
+Typical output from other scalers:
+
+![](/assets/c128/rgbinterpolated.jpg)
+
+In [Ian's words](https://videogameperfection.com/forums/topic/hdmi-output-using-raspberry-pi-zero/), "it re-samples and re-quantises the incoming video and effectively reconstructs exactly the original bit image present in the RAM of the source computer, it then rescales the image using integer nearest neighbour scaling and applies its own machine specific palette to that image and the end result is noise free and sharp and it makes the output of real hardware look like it’s coming from an emulator." Here's a [great video](https://www.youtube.com/watch?v=xxoyYMmCtTs) where Ian presents the project.
+
+![](/assets/c128/rgbtohdmi.jpg)
+
+The second part of this combo is [LumaCode](https://github.com/c0pperdragon/LumaCode/wiki/Overview), an open single-wire protocol created by Reinhard Grafl (aka [c0pperdragon](https://github.com/c0pperdragon)) whose goal is to transport video data in a semi-digital form from computers that "do not already expose the video signal in a digitally usable form," like the C64, and many others from the 70s and 80s.
+
+Reinhard designed multiple boards for different 8-bit computers that sit passively between the computer and their video chips, "sniff" the relevant signals directly from the IC pins and encode the video signal to LumaCode. By interpreting the signals directly from the video chip source and not further down the chain, these boards are more immune to the noise and artifacts introduced by amplifier or modulator circuits. One of those boards is the [VICIIdizer128](https://github.com/c0pperdragon/LumaCode/wiki/VICIIdizer128-(for-the-C128)) for the C128.
+
+![](/assets/c128/c128-18.jpeg)
+
+Finally, you guessed it, at [some point in time](https://videogameperfection.com/forums/topic/hdmi-output-using-raspberry-pi-zero/), the RGBtoHDMI project started supporting Reinhard's LumaCode input in the firmware. In fact, c0pperdragon now [sells a version](https://www.tindie.com/products/c0pperdragon/rgbtohdmi-mono-lumacode/) of the RGBtoHDMI hat that has a ready to use LumaCode cable (or you can just buy [this cable](https://www.tindie.com/products/c0pperdragon/lumacode-cable-for-rgbtohdmi/) too).
+
+Long story short, I bought a [VICIIdizer128](https://github.com/c0pperdragon/LumaCode/wiki/VICIIdizer128-(for-the-C128)) and RGBtoHDMI hat, installed it, and now I have super-low-latency crysp HDMI video from my C128 that looks like it's coming from an emulator.
+
+![](/assets/c128/c128-8.jpg)
+
+![](/assets/c128/c128-9.jpg)
+
+The other great thing about the VICIIdizer is that it's a passive board, which means that I can either use the S-Video, LumaCode + HDMI, or both. I assembled and installed everything, here it is in action:
+
+{{< video mute="true" autoplay="true" loop="true" src="/assets/c128/c128lumacode.mp4" >}}
+
+Checkout the [c0pperdragon store](https://www.tindie.com/stores/c0pperdragon/) on Tindie.
+
+## MOS 8701 clock generator
+
+The original C64 and C128 clock generator chip, the [MOS 8701](https://archive.org/details/mos8701datapage), I also something I had problems with in the past. The 8701 divides the crystal oscillator frequency and creates the color and dot clock signals, which govern the rest of the system.
+
+TOLB (The Other Little Board) is a low-power, independent (doesn't need the crystal, has its own oscillator) direct replacement that works both in the C64 and the C128. You can buy them at [Amibay](https://www.amibay.com/threads/8701-replacement-meet-tolb.91443/). The 8701 usually sits on a socket and replacing it takes seconds.
+
+![](/assets/c128/c128-11.jpg)
+
+## PLAster128
+
+PLAs (Programmable Logic Arrays) are very sensitive and are one of the first chips to go when things age, so it's generally a good idea to replace them. Johan Grip has [reverse engineered](https://c128.se/posts/silicon-adventures/) the C128 PLA (MOS 8721) chip a few years ago and published the verilog code in a [github repo](https://github.com/jgrip/c128-verilog).
+
+I bought the [PLAster128](https://store.backbit.io/product/plaster-128/) (now [open sourced](https://github.com/evietron/BackBit-OpenSource/tree/main/PLAster128)) from Backbit because initially I wanted to use the BackBit cartridge with the C128 (I changed my mind later, I'll explain below.)
+
+I had to desolder the original PLA, then added a socket just in case, and finally installed the PLAster128. I don't need its extra features for the BackBit, so I have them disabled. It just works.
+
+![](/assets/c128/c128-10.jpeg)
+
+## Drive ID switch
+
+C64/128 floppy disk drives are connected through the [serial IEC bus](https://www.c64-wiki.com/wiki/Serial_Port). Devices that are connected to the IEC bus are assigned with identification numbers. A lot of software, especially old titles, expects the primary floppy drive to have id #8 and will not boot or work from any other id. Everyone who owned a C64 remembers LOAD "*",8,1 they even have a [t-shirt](https://www.redbubble.com/i/t-shirt/Ready-Load-8-1-C64-by-haas-shop/33016887.NL9AC).
+
+![](/assets/c128/load8.jpeg)
+
+The C128DCR comes with an internal [1571 drive](https://www.c64-wiki.com/wiki/Commodore_1571) in the box that is fixed to id #8. While this is fine for a single disk drive system, it might not be ideal if you are going to use the internal drive in combination with other external drives and want one of those to be the primary drive.
+
+There are ways to reassign the drive numbers using [software device managers](https://www.bartsplace.net/content/publications/devicemanager128.shtml), but I ended up going for the physical switch mod option.
+
+The [solution](http://commodore128.mirkosoft.sk/herdware.html) was simple, I cut one of the jumpers that ground the pins 15 and 16 of the U106 6522 in the PCB, and soldered the pads to two wires and a switch in the back of the C128DCR. I can use that switch to select the id #10 or #8 for the internal drive.
+
+![](/assets/c128/c128-12.jpeg)
+
+The back now has one switch for the PLAster128 "kernel override" feature (which I don't need anymore), one switch for the drive id, and a LumaCode out RCA connector.
+
+## Expansion port cartridge
+
+The final puzzle piece is adding a cartridge that helps me load software into the computer. Of course, I could use 5 1/4 floppy disks, but it wouldn't be convenient.
+
+The C64 scene has many expansion port cartridge [options](https://skoe.de/easyflash/), commercial and open source, and most are compatible with the C128 in C64 mode, but I wanted to take advantage of the C128 advanced features, so I tried these three:
+
+### [Idun for the Commodore 128](https://github.com/idun-project/idun-cartridge)
+
+"The [idun-cartridge](https://github.com/idun-project/idun-cartridge) uses a [Propeller 1](https://www.parallax.com/propeller-1/) micro-controller to provide a fast hardware interface between the C128 and a Raspberry Pi ("RPi") that runs a customized Linux OS."
+
+A came across Idun in a [hackaday blog post](https://hackaday.com/2023/04/17/a-new-commodore-c128-cartridge/). Some of its features are:
+
+* You can use it in C64 mode to load games. It has a nice Arcade app that you can trigger from a switch and lets you select and run games from the Raspberry Pi filesystem, in (almost) any format, instantly.
+* It also supports loading C128 specific applications and games.
+* It has a bunch of tools to run specifically with the Z80 and the VDC, in 40 or 80 columns. It even has a [Z80 compiler/assembler](https://github.com/idun-project/idun-zcc) if you want to build your own software.
+* It has networking, APIs, you can [write applications in Lua](https://github.com/idun-project/idun-cartridge/blob/main/doc/luaref.md) that run in Linux and interface with the C128, providing coprocessing functionality.
+
+It comes in the form of [a kit](https://www.tindie.com/products/idun-cartridge-c128/idun-cartridge-c128-kit/) that you buy on Tindie. So yes, I bought and assembled one.
+
+![](/assets/c128/c128-14.jpeg)
+
+![](/assets/c128/c128-13.jpeg)
+
+I then hooked it up to the C128 and started playing with it. I found an [out-of-sync video timming bug](https://github.com/idun-project/idun-cartridge/issues/6) in 80 column mode using the VDC which was promptly fixed. The author is very responsive and puts a lot of time into the project, there are [regular releases](https://github.com/idun-project/idun-cartridge/releases) and the Github repos are very active.
+
+Here it is running in C128 80-column mode with the Z80 and VDC.
+
+![](/assets/c128/c128-15.jpeg)
+
+Overall, the Idun is a versatile cartridge with regular firmware and tool upgrades; it is worth having around and playing with if you own a C128.
+
+### [BackBit cartridge](https://store.backbit.io/product/backbit-pro/)
+
+[BackBit](https://store.backbit.io/product/backbit-pro/)'s advantage is that the cartridge supports 12+ vintage systems out of the box using expansion port [adapters](https://store.backbit.io/product/backbit-pro-adapter/); the list includes pearls like the Atari 2600, ZX Spectrum, or Sinclair 1000. [Evie Salomon](https://www.linkedin.com/in/evietron/) single-handedly founded Backbit and developed all its products.
+
+![](/assets/c128/c128-16.jpeg)
+
+The reason why I got one is that I can use it not only with the C64/128, but also with all the other 8-bit computers I own. The cartridge is very easy to set up on the C64/C128. It boots instantly, reads your files from the SD card, supports multiple image formats, and is somewhat compatible with the popular EasyFlash cartridge files. Evie publishes regular [firmware updates](https://backbit.io/downloads/Firmware/BackBit/Revisions.txt), including bug fixes or new features, and runs an active [forum](https://forum.backbit.io/) where you can ask questions and get support. Not everything or every game works, but overall, it's a powerful and convenient C64 companion. I'm pretty sure I'll be using it with my other 8-bit machines.
+
+### Ultimate-II+L
+
+The [Ultimate-II+](https://ultimate64.com/) is my favorite C64/C128 cartridge and the one that is permanently fitted in my C128DCR.
+
+Unlike other cartridges that just load software directly into memory (DMA), the Ultimate-II+ plugs into the expansion port, where it gets its power from and gets access to the system bus, and then connects a cable to the IEC port, just like a regular external [1541](https://www.c64-wiki.com/wiki/Commodore_1541) would do. The disk images are still files in the SD card, but from the C64/C128 perspective, the system sees a regular 1541/71 drive connected and regular floppy disks inserted. The cartridge even has a small built-in speaker that emits the real disk drive sounds when it's operating.
+
+From the [documentation](https://1541u-documentation.readthedocs.io/en/latest/quick_guide.html), "The main feature of the Ultimate-II+ is a cycle accurate implementation of the Commodore 1541 Floppy Disk Drive. This part of the Ultimate-II+ cartridge thus acts exactly like a real drive. It is not any faster or any slower than a real floppy disk drive."
+
+As such, this is one of the few systems, if not the only one, that can run games or software that use and abuse the hardware capabilities and specificities and expect a real disk drive. You can't just run demos like the [Wonderland XIV](https://www.youtube.com/watch?v=LJ3AOoYT0qg) or any software that uses custom or fast loaders without an actual physical drive. But you can, with the Ultimate-II+!
+
+![](/assets/c128/c128-17.jpeg)
+
+But this is not all. [Gideon Zweijtzer](https://www.linkedin.com/in/gideonzweijtzer/), the author, is quite a genius. Since the cartridge also has access to the bus lines, it can do DMA and interrupts, and its FPGA and firmware provides an impressive list of additional features, like:
+
+* Multiple configurable drive types and ID devices.
+* Real time clock.
+* Stereo SID emulation.
+* 3rd party cartridge emulation support if you want to run an Action Replay. The list is [huge](https://1541u-documentation.readthedocs.io/en/latest/howto/cartridges.html#supported-c64-cartridge-types).
+* Tape emulation.
+* Modem support, using the ethernet port and emulating a MOS 6551 ACIA chip and a serial port, compatible with terminals like [CCGMS](https://github.com/mist64/ccgmsterm).
+* Virtual printer, compatible with most software.
+* It has a REST API that you can use the control your C64/128.
+* Integration with the [Assembly64 online database](https://1541u-documentation.readthedocs.io/en/latest/howto/assembly.html), so that you can find, donwload and run titles directly from the menu, online.
+* And it [works great](https://www.bartsplace.net/content/publications/1541ultimate128.shtml) with the C128 in both modes, 64 and in 128.
+
+And finally, the Ultimate can also emulate a REU (RAM Expansion Unit). REUs like the [Commodore 1750/1764s](https://en.wikipedia.org/wiki/Commodore_REU) used clever primitives to transfer data between their own memory and the C64/128 host system main memory, thus expanding it from 64 or 128K to up to 512KB, kind of. These units are quite rare and expensive.
+
+REUs were popular if you wanted to run productivity software like the [GEOS](https://en.wikipedia.org/wiki/GEOS_(8-bit_operating_system)) operating system, or [CP/M](https://www.c64-wiki.com/wiki/CP/M) in the C128's Z80.
+
+#### Sonic, the Ultimate ultimate test
+
+Yes, Sonic, you read it well. Believe it or not, in 2021 Sonic the Hedgehog was [ported for Commodore 64/128](https://www.lemon64.com/forum/viewtopic.php?t=78945). Interestingly, this port requires a RAM Expansion Unit with at least 256KB to deliver all the game graphics, fast scrolling, and non-stop action. Moreover, if the game detects that it's running on a C128, it will use CPU acceleration for even smoother and faster animations. Truly a work of art and superb engineering.
+
+{{< youtube jGp4a00OeRs >}}
+
+So Sonic is indeed the ideal candidate to show off my finest C64/128 setup so far. I'm going to boot my C128DCR, download the game from the Assembly64 online database, directly from the Ultimate-II+L menus and run it as if it was on a floppy disk. The game will detect and take advantage of both the Ultimate REU emulation and C128 mode. Here goes, unedited:
+
+{{< youtube M6falVAkInI >}}
+
+Notice the disk drive sounds? They're coming from the Ultimate-II+ speaker.
+
+# Final remarks
+
+I'm very happy with this configuration. It is a beautiful and powerful machine; it works well, it can run every C64 and C128 title I can think of, and the Ultimate-II+ companion cartridge adds an extra layer of features and convenience that are unmatchable.
+
+I hope you enjoyed this blog. There are two things that I want to do now: the first is to explore the [GEOS operating system](https://en.wikipedia.org/wiki/GEOS_(8-bit_operating_system)). I remember running GEOS in my old C64 system back then, but the C128 version with REU support should take things to another level. The second thing is running [CP/M](https://en.wikipedia.org/wiki/CP/M) and CP/M software in Z80 mode. I remember learning [Wordstar](https://en.wikipedia.org/wiki/WordStar) word processing in a computer class when I was a kid, and I'm pretty sure I can also make it run in this setup.
+
+Expect follow-up blogs.
