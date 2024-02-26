@@ -6,13 +6,13 @@ title: My finest C64/128 setup so far
 
 The C128 is a [fascinating](https://www.c64-wiki.com/wiki/Commodore_128) and unusual machine. It was the last 8-bit Commodore machine before the Amiga and co-existed with the C64 series for a while. They sold ~8 million units worldwide (vs ~17 million C64). I never owned one, but I fondly remember playing with one at my friend's place and seeing them in computer shops.
 
-![](/assets/c128/c128-0.jpeg)
+![](/assets/c128/c128dcr.jpeg)
 
 It's ~~fully~~ [99.8%](https://www.youtube.com/watch?v=Ial2VSAu7tw) backward compatible with its predecessor in C64 mode, but in native C128 mode it takes advantage of its 128 KB RAM, higher clocked 2 MHz 6510 variant (the 8502), and the improved VIC-IIe graphics chip.
 
 But that's not all; the C128 has a second CPU, a Zilog [Z80](https://en.wikipedia.org/wiki/Zilog_Z80), and a second graphics chip, the [VDC](https://en.wikipedia.org/wiki/MOS_Technology_8563) (MOS 8563), capable of doing RGBi and 80 columns, enabling running CP/M on the machine.
 
-If you want to know more about the story of how the C128 came out to be, which you should because it's fascinating, please see this [8-Bit Guy interview](https://www.youtube.com/watch?v=wzMsgnnDIRE) with its hardware designer, [Bill Herd](https://en.wikipedia.org/wiki/Bil_Herd); I guarantee it's well worth the 30 minutes. One of the things worth spoiling from the interview is that Bill and the team were free to design the C128 according to their own ideas; they had no business requirements, so they deliberately made it "weird," hobbyist-friendly, and hackable.
+If you want to know more about the story of how the C128 came out to be, which you should, please see this [8-Bit Guy interview](https://www.youtube.com/watch?v=wzMsgnnDIRE) with its hardware designer, [Bill Herd](https://en.wikipedia.org/wiki/Bil_Herd); I guarantee it's well worth the 30 minutes. One of the things worth spoiling from the interview is that Bill and the team were free to design the C128 according to their own ideas; they had no business requirements, so they deliberately made it "weird," hobbyist-friendly, and hackable.
 
 Anyway, you know where this is going.
 
