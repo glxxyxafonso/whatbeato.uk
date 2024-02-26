@@ -8,7 +8,7 @@ The C128 is a [fascinating](https://www.c64-wiki.com/wiki/Commodore_128) and unu
 
 ![](/assets/c128/c128-0.jpeg)
 
-It's fully backward compatible with its predecessor in C64 mode, but in native C128 mode it takes advantage of its 128 KB RAM, higher clocked 2 MHz 6510 variant (the 8502), and the improved VIC-IIe graphics chip.
+It's ~~fully~~ [99.8%](https://www.youtube.com/watch?v=Ial2VSAu7tw) backward compatible with its predecessor in C64 mode, but in native C128 mode it takes advantage of its 128 KB RAM, higher clocked 2 MHz 6510 variant (the 8502), and the improved VIC-IIe graphics chip.
 
 But that's not all; the C128 has a second CPU, a Zilog [Z80](https://en.wikipedia.org/wiki/Zilog_Z80), and a second graphics chip, the [VDC](https://en.wikipedia.org/wiki/MOS_Technology_8563) (MOS 8563), capable of doing RGBi and 80 columns, enabling running CP/M on the machine.
 
@@ -157,7 +157,7 @@ It comes in the form of [a kit](https://www.tindie.com/products/idun-cartridge-c
 
 ![](/assets/c128/c128-13.jpeg)
 
-I then hooked it up to the C128 and started playing with it. I found an [out-of-sync video timming bug](https://github.com/idun-project/idun-cartridge/issues/6) in 80 column mode using the VDC which was promptly fixed. The author is very responsive and puts a lot of time into the project, there are [regular releases](https://github.com/idun-project/idun-cartridge/releases) and the Github repos are very active.
+I then hooked it up to the C128 and started playing with it. I found an [out-of-sync video timing bug](https://github.com/idun-project/idun-cartridge/issues/6) in 80 column mode using the VDC which was promptly fixed. The author is very responsive and puts a lot of time into the project, there are [regular releases](https://github.com/idun-project/idun-cartridge/releases) and the Github repos are very active.
 
 Here it is running in C128 80-column mode with the Z80 and VDC.
 
