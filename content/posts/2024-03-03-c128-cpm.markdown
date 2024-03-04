@@ -1,0 +1,106 @@
+---
+categories: retrocomputing
+date: "2024-02-25"
+title: Running CP/M on the C128
+---
+
+The [CP/M](https://en.wikipedia.org/wiki/CP/M), short for Control Program/Monitor, was one of the first operating systems of the personal computer revolution. It was launched in 1974, and it celebrates 50 years this year. It was ported and made available for many 8-bit machines with different CPUs and was related to running productivity software. If you ever used CP/M, then, well, I hate to say it, but you're old.
+
+I had a brief encounter with CP/M when I was 14 or 15 years old; I can't remember exactly. At the time, I was in high school in Aveiro, and the local computer shop, which I visited daily on my way to the train station, just to stare at the window, the same way a pilgrim would visit and contemplate at a shrine, had two beautiful machines on display: the brand-new Amiga 1000 and a C128D.
+
+I owned a C64 and was familiar with the C128, but this one was odd. It wasn't running any games, color graphics or playing music. Instead, it was connected to a monochrome monitor which always displayed either a weird command line prompt or what seemed to be some boring professional writing software.
+
+I soon came to find that it was running CP/M and WordStar, one of the first word processors for microcomputers. My daily obsessive visits to the computer shop led to some friendship with the owner, to the point that he'd let me in and play with the machines. So, I played with CP/M and learned how to use WordStar.
+
+![](/assets/cpm/c128cpm7.jpeg)
+
+Well, in case you didn't notice, [I own a C128DCR now](/posts/2024/02/25/c128dcr/). This blog is about how I got CP/M, WordStar, and other fun ancient software apps running on it.
+
+## CP/M for the C128
+
+The C128 came bundled with CP/M 3.0 Plus, which could be run in either 40-column (using the VIC-IIe) or 80-column mode (using the [VDC video chip](https://en.wikipedia.org/wiki/MOS_Technology_8563) and the RGBi output). Due to numerous bad design decisions and portability issues, CP/M ran notoriously slow on the C128 compared to other Z80 systems running at similar clock speeds. Linards Ticmanis, the author of [CPMFAST](https://csoren.github.io/c128cpm/releases/CPMFAST.html), a "speed-improved and generally-fixed CP/M distribution for the C128." launched in 1999, [explains](https://retrocomputing.stackexchange.com/questions/2361/why-does-the-commodore-c128-perform-poorly-when-running-cp-m) the problems in detail.
+
+Another later variant of CP/M for the C128 was this [ZPM3 BootDisk](https://csdb.dk/release/?id=171699&show=summary#summary) released just a few years ago. The original BDOS (short for Basic Disk Operating System, which is a kind of CP/M kernel) distributed by Digital Research was coded for the [Intel 8080](https://en.wikipedia.org/wiki/Intel_8080). While the Z80 is backward compatible with the 8080, [ZPM3](https://github.com/wwarthen/CPU280/blob/master/ZPM3/zpm3.txt) is a BDOS replacement optimized for Z80 opcodes. Furthermore, this bootdisk distribution has other tools and patches that improve the 80-column fast mode performance and can use a REU expansion.
+
+Let's try to boot ZPM3.
+
+{{< youtube 05ajQWZttEI >}}
+
+It boots and it works. I run Microsoft Basic-80, the "[most extensive implementation](https://archive.org/details/BASIC-80_MBASIC_Reference_Manual/page/n1/mode/2up) of BASIC available for the 8080 and Z80 microprocessors." I type a very simple program and run it.
+
+I end up preferring CPMFAST to ZPM3 though, as it seems more compatible with some of the software I tested.
+
+Now, something more advanced. If you read my [last blog](/posts/2024/02/25/c128dcr/), I have an [Ultimate-II+](https://ultimate64.com/) cartridge, a cycle-accurate implementation of the Commodore 1541/71 Floppy Disk Drive with many extras, plugged into my C128DCR. Let's try to take advantage of that.
+
+![](/assets/cpm/c128cpm8.jpeg)
+
+When I was sharing about my C128 adventures in the [Everything C64](https://www.lemon64.com/forum/viewtopic.php?t=81165) discord server, I chatted with [Xander Mol](https://www.idreamtin8bits.com/), a retro enthusiast, blogger, and skilled developer who also owns a C128 and an Ultimate II+. It turned out that he's the author of [CPMUTools](https://github.com/xahmol/CPMUTools), a suite of tools to help using the Ultimate II+ cartridge from within CP/M, one of which is called CPM UMount, an application that enables to mount disk images on the UII+ filesystem directly from CP/M, which I will be using.
+
+![](/assets/cpm/c128cpm9.png)
+
+Now I need CP/M software to play with and I need to build CP/M disk images with it. [Retroarchive](http://www.retroarchive.org/cpm/) has an extensive collection of downloadable CP/M software to get us started, but how do I get the files into C128 CP/M MFM disk images? Enter [ctools](https://github.com/mist64/ctools), a collection of command line utilities for accessing C64 and C128 CP/M disk images. I clone the Github repo and compile the source code, no issues.
+
+### Running WordStar
+
+![](/assets/cpm/c128cpm6.jpeg)
+
+[WordStar](https://en.wikipedia.org/wiki/WordStar) was one of the first word processors I used on any computer, so I had to start with it. The illustration above is from the [WordStar Reference Manual](http://www.bitsavers.org/pdf/microPro/Wordstar_3.3/Wordstar_3.3_Reference_Manual_1983.pdf).
+
+I download a copy of WordStart 3.0 from Retroarchive and unzip the files, then I use cformat and ctools to create a CP/M disk image and I copy the files to it.
+
+```bash
+$ ./cformat -2 wordstar.d71
+$ ./ctools wordstar.d71 p ~/Downloads/WS30/*
+./ctools: put /Users/celso/Downloads/WS30/INSTALL.COM
+./ctools: put /Users/celso/Downloads/WS30/MAILMRGE.OVR
+./ctools: put /Users/celso/Downloads/WS30/MERGPRIN.OVR
+./ctools: put /Users/celso/Downloads/WS30/WIMSGS.OVR
+./ctools: put /Users/celso/Downloads/WS30/WS.COM
+./ctools: put /Users/celso/Downloads/WS30/WSMSGS.OVR
+./ctools: put /Users/celso/Downloads/WS30/WSOVLY1.OVR
+./ctools: put /Users/celso/Downloads/WS30/WSU.COM
+```
+
+I then take the wordstar.d71 image file, put it my UltimateII+ USB stick, boot CP/M and the use CPMUTools' UMount utility to mount the image on the CP/M drive B:
+
+![](/assets/cpm/c128cpm1.jpeg)
+
+I then switch to drive B: and run the INSTALL command. During the installation, I was asked a few questions about stuff I hadn't heard in decades. I answer then the best I can.
+
+![](/assets/cpm/c128cpm2.jpeg)
+
+When the installation is over, WordStar runs, and I get flashbacks. I remember the same screen and menus from that computer shop in the 80s. It just works.
+
+![](/assets/cpm/c128cpm3.jpeg)
+
+I also ran dBase II, Turbo Pascal, SuperCalc, everything worked.
+
+### CP/M Games
+
+Even though CP/M was mostly known for productivity and business software, several game titles were also published.
+
+Here's MyChess drawing a chess board in ASCII using terminal sequences.
+
+{{< youtube NXzDhRtRkjo >}}
+
+Of course you could run [Infocom text adventures](https://en.wikipedia.org/wiki/Classic_Text_Adventure_Masterpieces_of_Infocom). Here's Zork1.
+
+![](/assets/cpm/c128cpm4.jpeg)
+
+[Blue Bastards from Outer Space](https://csdb.dk/release/?id=172060) is more "recent," from 1999. It was coded in Turbo Pascal and shows off the C128's VDC chip and sound capabilities from CP/M.
+
+{{< youtube tdHg5alVlqE >}}
+
+### Easter Egg
+
+The C128 had a [few easter eggs](https://www.c64-wiki.de/wiki/Easteregg#C128). In CP/M you can trigger one where the authors are shown from some hidden data in the Z80 ROM by typing the following sequence and pressing return:
+
+```
+A> (ESC)=88(ESC)e
+```
+
+![](/assets/cpm/c128cpm5.jpeg)
+
+That’s it, folks. CP/M does indeed run on the C128.
+
+Next up, GEOS.
