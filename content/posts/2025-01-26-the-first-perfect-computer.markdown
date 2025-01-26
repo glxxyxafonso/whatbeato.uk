@@ -23,7 +23,7 @@ Later, the more affordable [Amiga 500](https://en.wikipedia.org/wiki/Amiga_500) 
 
 {{< caption image="/assets/amiga38.jpeg" text="I had to live with the Ñ key for some years" >}}
 
-I had a few Amigas after that over the years, [A500](https://en.wikipedia.org/wiki/Amiga_500), [A3000](https://en.wikipedia.org/wiki/Amiga_3000) (close call), [A600](https://en.wikipedia.org/wiki/Amiga_600) and [A1200](https://en.wikipedia.org/wiki/Amiga_1200), but none of them compared to the Amiga 1000 in first impact, personality and beauty. Having spent quite a big part of my early computing days playing and working with Amigas, to the point of calling it a religious obsession, it always felt wrong that I never owned an A1000.
+I had a few Amigas after that over the years, [A500](https://en.wikipedia.org/wiki/Amiga_500), [A3000](https://en.wikipedia.org/wiki/Amiga_3000), [A600](https://en.wikipedia.org/wiki/Amiga_600) and [A1200](https://en.wikipedia.org/wiki/Amiga_1200), but none of them compared to the Amiga 1000 in first impact, personality and beauty, not even the A3000. Having spent quite a big part of my early computing days playing and working with Amigas, to the point of calling it a religious obsession, it always felt wrong that I never owned an A1000.
 
 That was solved recently when I bought an Amiga 1000 on eBay. This is the long-overdue story about how I restored, fixed, and upgraded it and my future plans. If you’re the rabbit hole type, I added as many links and references as I could so you can dive deeper into the Amiga world. I hope you enjoy reading it.
 
