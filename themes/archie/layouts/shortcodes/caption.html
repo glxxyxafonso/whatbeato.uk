@@ -1,0 +1,12 @@
+<div class="caption" style="">
+    {{ if .Get "link" }}
+    <a href="{{ .Get "link" }}">
+        {{ end }}
+        {{ if .Get "image" }}
+        <img src="{{ .Get "image" }}" />
+        {{ end }}
+        {{ .Get "text" }}
+        {{ if .Get "link" }}
+    </a>
+    {{ end }}
+</div>
