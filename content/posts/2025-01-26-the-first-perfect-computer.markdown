@@ -43,7 +43,7 @@ My model is a PAL Amiga 1000 with the serial number [XM4056969NP](https://www.am
 
 Back in the day, computers would typically connect to TV sets or dedicated monitors using either modulated RF, composite (sometimes with separate chroma/luma, also known as S-Video), or RGB video and encode the signals using either NTSC in the US and some Americas, [PAL][pal] or [PAL/SECAM][secam] in the rest of the world. These video standards are derived from the country’s electrical power frequencies. The US uses 110V at 60Hz, [NTSC][ntsc] video runs at 30 frames per second, while most of the world uses 220V at 50Hz and PAL at 25 frames per second.
 
-{{< caption image="/assets/amiga37.png" text="World map distribution of PAL vs NTSC, by Wikipedia" >}}
+{{< caption image="/assets/amiga37.jpeg" text="World map distribution of PAL vs NTSC, by Wikipedia" >}}
 
 You see what’s going on here? Many pieces of equipment of this time used the mains electricity frequency to generate internal clocks, usually the video-related ones, and the Amiga computer was no exception to this rule. If you bought an Amiga in the US and brought it to Europe, it wouldn’t work correctly, and vice versa. It also means that we had games or versions of the same game made explicitly for PAL or NTSC, and you needed the correct version to play it correctly.
 
@@ -159,7 +159,7 @@ I mentioned David Dunklee and the Parceiro board above but didn’t give much co
 
 Parceiro (which, by the way, means “Partner” in Portuguese) is an A1000 external expansion that packs an AUTOBOOT SD Card Reader, 8Mb of [AUTOCONFIG][autoconfig] fast RAM, a battery-backed real-time clock, and three banks of user-flashable Kickstart-in-ROM, all in one small and sleek package that plugs into the 86-pin expansion port.
 
-![](/assets/amiga21.png)
+![](/assets/amiga21.jpeg)
 
 I found out about the Parceiro 2 when I read a thread in the AmigaLove forum called “[The Best Amiga 1000 Upgrade in 30 Years: Parceiro II][parceiro]” ([video][parceiro-video]), and I didn’t think twice; I had to have one.
 
