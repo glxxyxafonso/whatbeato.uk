@@ -273,7 +273,7 @@ So yes, this is the way to go. I ordered some [PCBs from PCBWay](https://www.pcb
 
 ### Rejuvenator or GBA1000
 
-At some point, I’d like to explore options to upgrade the Amiga 1000 to use a [Fat Agnus](https://en.wikipedia.org/wiki/MOS_Technology_Agnus) with at least 1 MB of chip RAM support. I don’t have many options right now. I would build a [Rejuvenator][rejuvenator] myself, but it’s useless for PAL Amiga 1000s with the WCS daughterboard.
+At some point, I’d like to explore options to upgrade the Amiga 1000 to use a [Fat Agnus](https://en.wikipedia.org/wiki/MOS_Technology_Agnus) with at least 1 MB of chip RAM support. I don’t have many options right now. I would build a [Rejuvenator][rejuvenator] myself, but it’s useless in a PAL Amiga 1000s without the WCS daughterboard.
 
 I could also build a [GBA1000](https://www.amigalove.com/viewtopic.php?t=587) (more info [here](https://www.amibay.com/threads/gba1000-rev4-build-log.46916/)), which is the modern successor to the [Phoenix board](https://amiga.resource.cx/exp/phoenix). It is a full motherboard replacement that uses the original ECS chips but with many upgrades. This is definitely an interesting project, but it’d mean throwing my board away, which makes me sad, and building an Amiga from scratch, essentially, similar to what I did with the [Frankenstein 64](/posts/2022/12/28/c64-from-scratch/), but x10 times harder.
 
