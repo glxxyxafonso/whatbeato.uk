@@ -2,6 +2,7 @@
 categories: amiga
 date: "2025-01-25T14:08:00Z"
 title: The first perfect computer
+thumbnail: "https://celso.io/assets/amiga2.jpeg"
 ---
 
 This is a story about restoring and upgrading a [Commodore Amiga 1000](https://en.wikipedia.org/wiki/Amiga_1000), the first model of the Amiga series.
