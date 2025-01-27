@@ -19,7 +19,7 @@ I never owned an A1000. I was still happily exploring and playing with my C64 wh
 
 {{< caption image="/assets/newtek.gif" link="https://www.youtube.com/watch?v=UzwUQIvhHzw" text="NewTek Demo Reel 1" >}}
 
-Later, the more affordable [Amiga 500](https://en.wikipedia.org/wiki/Amiga_500) came out. I had some money aside from summer jobs, and on a trip to [Andorra](https://en.wikipedia.org/wiki/Andorra), I saw one for sale in a shop. My parents chipped in the rest and helped me buy it. That was my first Amiga, a second-hand smuggled-in A500 with a Spanish keyboard layout. I never forgot that useless Ñ key.
+Later, the more affordable [Amiga 500](https://en.wikipedia.org/wiki/Amiga_500) came out. I had some money put aside from summer jobs, and on a trip to [Andorra](https://en.wikipedia.org/wiki/Andorra), I saw one for sale in a shop. My parents chipped in the rest and helped me buy it. That was my first Amiga, a second-hand smuggled-in A500 with a Spanish keyboard layout. I'll never forget that useless Ñ key.
 
 {{< caption image="/assets/amiga38.jpeg" text="I had to live with the Ñ key for some years" >}}
 
