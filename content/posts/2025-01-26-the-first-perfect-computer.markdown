@@ -15,7 +15,7 @@ I consider the A1000 a significant piece of home computing history. Arguably one
 
 If you think Steve Jobs invented pompous computer launch events, check out [The World Premiere of the Amiga](https://youtu.be/_QST1ZAJ29o), a black-tie event held at the Vivian Beaumont Theater at Lincoln Center in New York City on July 23rd, 1985.
 
-I never owned an A1000. I was still happily exploring and playing with my C64 when it came out. However, I remember drooling over one at the local computer store in Aveiro on my way home from high school, where I regularly began camping. I remember reading about it in computer magazines, and I have a very vivid memory of seeing one at a fair in a booth playing the infamous [NewTek Demo Reel 1][newtek] demo at the sound of the Art of Noise [Paranoimia][Paranoimia] song.
+I never owned an A1000. I was still happily exploring and playing with my C64 when it came out. However, I remember drooling over one at the local computer store in Aveiro on my way home from high school, where I regularly began camping. I remember reading about it in computer magazines, and I have a very vivid memory of seeing one at a fair in a booth playing the infamous [NewTek Demo Reel 1][newtek] at the sound of the Art of Noise [Paranoimia][Paranoimia] song.
 
 {{< caption image="/assets/newtek.gif" link="https://www.youtube.com/watch?v=UzwUQIvhHzw" text="NewTek Demo Reel 1" >}}
 
