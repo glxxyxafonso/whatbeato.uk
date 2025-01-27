@@ -9,7 +9,7 @@ This is a story about restoring and upgrading a [Commodore Amiga 1000](https://e
 
 Many of you might be familiar with the popular Amiga 500 or later models, but the Commodore Amiga 1000 was actually the [first model](https://en.wikipedia.org/wiki/History_of_the_Amiga) of the Amiga series produced.
 
-I consider the A1000 a significant piece of computing history. Arguably one of the most important machines of the 16-bit revolution period, considered by many to be the first multimedia computer, it marked the beginning of Commodore's last cycle, after the huge success of the C64, in the history of personal computing.
+I consider the A1000 a significant piece of home computing history. Arguably one of the most important machines of the 16-bit revolution period, considered by many to be the first multimedia computer, it marked the beginning of Commodore's last cycle, after the huge success of the C64, in the history of personal computing.
 
 {{< caption image="/assets/amiga2.jpeg" link="https://youtu.be/_QST1ZAJ29o?t=725" text="Andy Warhol and Debbie Harry using the Amiga 1000" >}}
 
