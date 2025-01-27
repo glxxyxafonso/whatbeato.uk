@@ -269,7 +269,7 @@ But there's a problem: RGB2HDMI was designed for 3-bit (8 colors) RGB output, no
 
 The other advantage of the RGB2HDMI compared to the GBS is that I get [flicker-free interlace](https://www.youtube.com/watch?v=_p1gJ2LVMn8&t=610s) video resolutions.
 
-So yes, this is the way to go. I ordered some [PCBs from PCBWay](https://www.pcbway.com/project/shareproject/Amiga_1000_CPLD_RGBtoHDMI_v1_1.html) and the BOM from Mauser, and I'm going to give it a shot. It's also an opportunity to train my SMD soldering skills.
+So yes, this is the way to go. I ordered some [PCBs from PCBWay](https://www.pcbway.com/project/shareproject/Amiga_1000_CPLD_RGBtoHDMI_v1_1.html) and the BOM from Mouser, and I'm going to give it a shot. It's also an opportunity to train my SMD soldering skills.
 
 ### Rejuvenator or GBA1000
 
