@@ -15,7 +15,7 @@ I consider the A1000 a significant piece of computing history. Arguably one of t
 
 If you think Steve Jobs invented pompous computer launch events, check out [The World Premiere of the Amiga](https://youtu.be/_QST1ZAJ29o), a black-tie event held at the Vivian Beaumont Theater at Lincoln Center in New York City on July 23rd, 1985.
 
-I never owned an A1000. I was still happily exploring and playing with my C64 when it came out. However, I remember drooling over one at the local computer store in Aveiro on my way from high school to home, where I regularly began camping, reading about it in computer magazines, and I have a very vivid memory of seeing one at a fair in a booth playing the infamous [NewTek Demo Reel 1][newtek] demo at the sound of the Art of Noise [Paranoimia][Paranoimia] song.
+I never owned an A1000. I was still happily exploring and playing with my C64 when it came out. However, I remember drooling over one at the local computer store in Aveiro on my way home from high school, where I regularly began camping. I remember reading about it in computer magazines, and I have a very vivid memory of seeing one at a fair in a booth playing the infamous [NewTek Demo Reel 1][newtek] demo at the sound of the Art of Noise [Paranoimia][Paranoimia] song.
 
 {{< caption image="/assets/newtek.gif" link="https://www.youtube.com/watch?v=UzwUQIvhHzw" text="NewTek Demo Reel 1" >}}
 
@@ -23,7 +23,7 @@ Later, the more affordable [Amiga 500](https://en.wikipedia.org/wiki/Amiga_500) 
 
 {{< caption image="/assets/amiga38.jpeg" text="I had to live with the Ñ key for some years" >}}
 
-I had a few Amigas after that over the years, [A500](https://en.wikipedia.org/wiki/Amiga_500), [A3000](https://en.wikipedia.org/wiki/Amiga_3000), [A600](https://en.wikipedia.org/wiki/Amiga_600) and [A1200](https://en.wikipedia.org/wiki/Amiga_1200), but none of them compared to the Amiga 1000 in first impact, personality and beauty, not even the A3000. Having spent quite a big part of my early computing days playing and working with Amigas, to the point of calling it a religious obsession, it always felt wrong that I never owned an A1000.
+I had a few Amigas after that over the years, [A500](https://en.wikipedia.org/wiki/Amiga_500), [A3000](https://en.wikipedia.org/wiki/Amiga_3000), [A600](https://en.wikipedia.org/wiki/Amiga_600) and [A1200](https://en.wikipedia.org/wiki/Amiga_1200), but none of them compared to the Amiga 1000 in first impact, personality and beauty, not even the A3000. Having spent quite a big part of my early computing days playing and working with Amigas, to the point of calling it a religious obsession, it always felt wrong that I never one.
 
 That was solved recently when I bought an Amiga 1000 on eBay. This is the long-overdue story about how I restored, fixed, and upgraded it and my future plans. If you’re the rabbit hole type, I added as many links and references as I could so you can dive deeper into the Amiga world. I hope you enjoy reading it.
 
@@ -85,7 +85,7 @@ I take it off the motherboard, though, as I don’t have the use for it; I have 
 
 ## Recapping everything
 
-The first thing that comes to every retro-enthusiast’s mind when a machine isn’t working is changing its capacitors—recapping, as it’s called. Electrolytic capacitors have a limited lifespan and tend to leak or dry out over time, causing all sorts of issues to old computers. I don’t see any leakage, but maybe this will help solve the problem. Either way, it’s always good practice to do it. So, I ordered a complete set of capacitors from [Mouser Electronics][mouser], armed myself with my Hakko FR-301 desoldering gun, and started the job.
+The first thing that comes to every retro-enthusiast’s mind when a machine isn’t working is replacing its capacitors—recapping, as it’s called. Electrolytic capacitors have a limited lifespan and tend to leak or dry out over time, causing all sorts of issues to old computers. I don’t see any leakage, but maybe this will help solve the problem. Either way, it’s always good practice to do it. So, I ordered a complete set of capacitors from [Mouser Electronics][mouser], armed myself with my Hakko FR-301 desoldering gun, and started the job.
 
 ![](/assets/amiga9.jpeg)
 
@@ -285,7 +285,7 @@ The other thing I’m watching is Mr. David Dunklee’s future versions of the P
 
 ## Conclusion
 
-I hope you enjoyed this blog. I’ve been having a lot of fun fixing, improving, and playing with this machine, which I consider a piece of retro computing history. Feel free to reach out if you have questions or comments or want to chat about Amigas; check my contacts page for details. I hang around [Bluesky](https://bsky.app/profile/celso.bsky.social) these days.
+I hope you enjoyed this blog. I’ve been having a lot of fun fixing, improving, and playing with this machine, which I consider a piece of retro computing history. Feel free to reach out if you have questions or comments or want to chat about Amigas; check my contacts page for details. I hang around [Bluesky](https://bsky.app/profile/celso.bsky.social) these days. There's also a [Two Stop Bits thread](https://twostopbits.com/item?id=5258).
 
 [launch]: https://www.youtube.com/watch?v=_QST1ZAJ29o
 [history]: https://en.wikipedia.org/wiki/History_of_the_Amiga
