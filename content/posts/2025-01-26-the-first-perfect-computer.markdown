@@ -49,7 +49,7 @@ You see what’s going on here? Many pieces of equipment of this time used the m
 
 If this topic interests you, check out this in-depth [PAL VS NTSC - The You're Not Stupid Guide](https://www.youtube.com/watch?v=HSujirmsrzQ) video.
 
-But there’s another different thing. NTSC A1000s have two boards, not one: the motherboard and a daughterboard, also known as [WCS](https://en.wikipedia.org/wiki/Amiga_1000#Design) (Writable Control Store). Why? Funny story. When the Amiga 1000 was announced and launched, the boot ROM, also known as [Kickstart][kickstart], wasn’t ready yet. Commodore was under a lot of pressure and didn’t want to wait, so they added this second board WCS on top of the main board as a hack to allow loading the boot ROM from a floppy disk. The PAL Amiga 1000 came later, and WCS was finally part of the motherboard with Kickstart on an actual ROM chip.
+But there’s another different thing. NTSC A1000s have two boards, not one: the motherboard and a daughterboard, also known as [WCS](https://en.wikipedia.org/wiki/Amiga_1000#Design) (Writable Control Store). Why? Funny story. When the Amiga 1000 was announced and launched, the boot ROM, also known as [Kickstart][kickstart], wasn’t ready yet. Commodore was under a lot of pressure and didn’t want to wait, so they added this second board WCS on top of the main board as a hack to allow loading the boot ROM from a floppy disk. The PAL Amiga 1000 model came later, they also required loading Kickstart from floppy, official ROM chips never materialized on the A1000, but at least now the WCS logic was part of the motherboard.
 
 {{< caption image="/assets/amiga5.jpeg" text="An NTSC Amiga 1000 motherboard with the WCS daughterboard" >}}
 
