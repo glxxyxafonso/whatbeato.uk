@@ -71,7 +71,7 @@ I opened the Amiga and noticed a few things. The first was the famous signatures
 
 {{< caption image="/assets/amiga6.jpeg" text="Inside of the Amiga 1000 case" >}}
 
-That's [Jay Miner][jay]'s signature on top right corner, considered the father of the Amiga, and Mitchy's, his dog, pawn.
+That's [Jay Miner][jay]'s signature on top right corner, considered the father of the Amiga, and Mitchy's, his dog's, paw.
 
 The second thing I noticed was that my Amiga had another board on the motherboard, which was a surprise. "This is a PAL Amiga, so this can't be the WCS," I thought. It wasn't.
 
@@ -241,7 +241,7 @@ Right now, I’m fiddling with an open-source [PlipBox](https://github.com/cnvog
 
 ![](/assets/amiga31.jpeg)
 
-I got a [HID2AMI](https://www.amibay.com/threads/hid2ami-v2-0-2-with-mousewheel-support-hid-mouse-and-gamepad-to-amiga-adaptor.107265/) dongle from Amibay so that I can use USB mouses and joysticks; I want to try that.
+I got a [HID2AMI](https://www.amibay.com/threads/hid2ami-v2-0-2-with-mousewheel-support-hid-mouse-and-gamepad-to-amiga-adaptor.107265/) dongle from Amibay so that I can use USB mice and joysticks; I want to try that.
 
 ![](/assets/amiga32.jpeg)
 
