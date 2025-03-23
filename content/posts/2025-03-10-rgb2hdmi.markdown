@@ -2,7 +2,7 @@
 categories: amiga
 date: "2025-03-10T12:08:00Z"
 title: RGB2HDMI for the Amiga 1000
-thumbnail: "https://celso.io/assets/amiga2.jpeg"
+thumbnail: "https://celso.io/assets/images/rgb2hdmi7.jpeg"
 ---
 
 On my last post "[the first perfect computer](/posts/2025/01/26/the-first-perfect-computer/)" I mentioned that I wasn't done with the A1000. I finally upgraded it with an internal RGB2HDMI adapter.
