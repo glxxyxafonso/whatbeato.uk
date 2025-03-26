@@ -19,7 +19,10 @@ pygmentscodefencesguesssyntax = true
 [params]
 	mode="auto" # color-mode → light,dark,toggle or auto
 	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
-	subtitle = "Paranoid Android"
+	subtitle = """
+👶 From when Mosaic took over Gopher.  
+🏢 Sr. Director of Engineering @ Cloudflare  
+🕹️ Slightly addicted to retrocomputing"""
 	mathjax = true # enable MathJax support
 	katex = true # enable KaTeX support
 
