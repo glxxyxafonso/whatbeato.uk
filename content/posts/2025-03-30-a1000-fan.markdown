@@ -1,0 +1,35 @@
+---
+categories: amiga
+date: "2025-03-30T00:08:00Z"
+title: Changing the A1000 fan
+thumbnail: "https://celso.io/assets/images/rgb2hdmi7.jpeg"
+---
+
+I'm on a roll upgrading the Amiga 1000. This time, I replaced the PSU fan.
+
+The Amiga 1000 PSU uses an ETRI Model 126LH metallic fan that is AC-powered 220/110V. These fans are pretty good, silent, reliable, and used in computers and industrial-grade equipment. However, they all suffer from a common problem: after long years of continuous use, the fan bearing starts developing an annoying grinding noise due to a lack of lubrication. This is a [well-known issue](https://www.amigalove.com/viewtopic.php?p=16937) for Amiga 1000 users, and I mentioned that mine also had the same problem in [another post](/posts/2025/01/26/the-first-perfect-computer/).
+
+{{< caption image="/assets/images/a1000-fan1.jpg">}}
+
+{{< caption image="/assets/images/a1000-fan2.jpg" text="Original ETRI Model 126LH fan" >}}
+
+You can take the bearing cover out and lubricate it with grease. This sometimes prolongs the silence of the original fan, but it's only a matter of time before the issue comes back to annoy you. It's best to replace it.
+
+You can use a few modern options to replace the ETRI Model 126LH. After some research, I chose the [Noctua NF-A8-UNL](https://noctua.at/en/products/fan/nf-a8-uln/specification) ultra-low-noise fan.
+
+{{< caption image="/assets/images/a1000-fan3.jpg" text="Noctua NF-A8-UNL" >}}
+
+This is a 12V DC power fan. I soldered two wires to the legs of a resistor and an IC where I could find the power rails. The fan only takes about 0.3W of power, so it's okay.
+
+{{< caption image="/assets/images/a1000-fan4.jpg" text="12V power cable to connect to the new fan" >}}
+
+It fits perfectly in place of the original; I just used some M3 11mm screws to attach it.
+
+{{< caption image="/assets/images/a1000-fan5.jpg" text="Fits perfectly in place of the original" >}}
+
+I put everything together and checked if the fan was extracting the air in the right direction outside. It was.
+
+{{< caption image="/assets/images/a1000-fan6.jpg" text="I put the PSU with the new fan back in the case" >}}
+
+The job is done. This is a perfect fan replacement that will last a long time, and the Amiga 1000 is super silent now; I can barely notice any noise from the fan.
+
